@@ -1,13 +1,19 @@
 """
-Grab start and end position photos from each exercise's YouTube demo.
+Grab start and end position photos from each exercise's demo video.
 
 Run from the fmtb-player folder:
-    pip install yt-dlp opencv-python
-    (ffmpeg must be installed: `brew install ffmpeg` on a Mac)
+    pip install opencv-python-headless numpy   (plus yt-dlp if you want the YouTube fallback)
     python tools/grab_frames.py
 
+Where the videos come from:
+  tools/sources.json maps each YouTube demo ID to the original recording in Dropbox
+  (folder "Fit Mom To Be Workouts"). Put those files in tools/cache/ with the same name.
+  Any video not in sources.json is downloaded from YouTube with yt-dlp (720p max).
+  A source can set "searchFrom": seconds (or "half") when one recording holds two
+  exercises and the second one should be used.
+
 What it does, for every exercise video in data/*.json:
-  1. Downloads the video (720p max) into tools/cache/.
+  1. Finds the recording in tools/cache/ (or downloads it from YouTube).
   2. Finds the first stretch where the body is moving (the first rep).
   3. Saves the frame just before that movement starts as the START photo,
      and the frame that looks most different from it within that rep as the END photo.
@@ -28,6 +34,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "tools", "cache")
 IMAGES = os.path.join(ROOT, "images")
 OVERRIDES = os.path.join(ROOT, "tools", "overrides.json")
+SOURCES = os.path.join(ROOT, "tools", "sources.json")
 SAMPLE_FPS = 6          # frames per second to analyse
 SKIP_SECONDS = 2.0      # skip the very start of each video
 MAX_SECONDS = 60        # only look at the first minute
@@ -36,6 +43,8 @@ REP_WINDOW = 5.0        # seconds after motion starts to search for the end posi
 os.makedirs(CACHE, exist_ok=True)
 os.makedirs(IMAGES, exist_ok=True)
 overrides = json.load(open(OVERRIDES)) if os.path.exists(OVERRIDES) else {}
+sources = {k: v for k, v in (json.load(open(SOURCES)) if os.path.exists(SOURCES) else {}).items()
+           if not k.startswith("_")}
 
 
 def video_ids():
@@ -51,7 +60,29 @@ def video_ids():
     return ids
 
 
+def duration(path):
+    cap = cv2.VideoCapture(path)
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    n = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+    cap.release()
+    return n / fps if n > 0 else 0
+
+
+def search_from(vid, path):
+    """Seconds to skip before looking for the first rep."""
+    v = sources.get(vid, {}).get("searchFrom", SKIP_SECONDS)
+    if v == "half":
+        return duration(path) / 2
+    return float(v)
+
+
 def download(vid):
+    src = sources.get(vid)
+    if src:
+        out = os.path.join(CACHE, src["file"])
+        if not os.path.exists(out):
+            raise FileNotFoundError(f'put "{src["file"]}" from Dropbox in tools/cache/')
+        return out
     out = os.path.join(CACHE, vid + ".mp4")
     if not os.path.exists(out):
         subprocess.run(["yt-dlp", "-q", "-f", "bv*[height<=720][ext=mp4]/b[height<=720]",
@@ -59,16 +90,17 @@ def download(vid):
     return out
 
 
-def read_frames(path):
+def read_frames(path, start=SKIP_SECONDS):
     cap = cv2.VideoCapture(path)
     fps = cap.get(cv2.CAP_PROP_FPS) or 30
     step = max(1, int(round(fps / SAMPLE_FPS)))
-    frames, times, i = [], [], 0
+    cap.set(cv2.CAP_PROP_POS_MSEC, max(0.0, start - 1.0) * 1000)
+    frames, times, i = [], [], int(cap.get(cv2.CAP_PROP_POS_FRAMES))
     while True:
         ok, frame = cap.read()
-        if not ok or i / fps > MAX_SECONDS:
+        if not ok or i / fps > start + MAX_SECONDS:
             break
-        if i % step == 0 and i / fps >= SKIP_SECONDS:
+        if i % step == 0 and i / fps >= start:
             frames.append(frame)
             times.append(i / fps)
         i += 1
@@ -121,7 +153,7 @@ def main():
                 s, e = overrides[vid]["start"], overrides[vid]["end"]
                 fs, fe = frame_at(path, s), frame_at(path, e)
             else:
-                frames, times = read_frames(path)
+                frames, times = read_frames(path, search_from(vid, path))
                 if not frames:
                     print("   no frames, skipped")
                     continue

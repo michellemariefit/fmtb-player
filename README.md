@@ -33,12 +33,10 @@ Give Claude Code this folder plus the Dropbox Word files for the next phase and 
 
 ## Better start and end photos
 
-The photos from the Word files are small thumbnails. `tools/grab_frames.py` pulls sharp start and end frames straight from each YouTube demo.
+The photos from the Word files are small thumbnails. `tools/grab_frames.py` pulls sharp start and end frames from the original exercise recordings.
 
-In Claude Code, from this folder:
-
-> Install yt-dlp, opencv-python and ffmpeg, then run `python tools/grab_frames.py`. When it finishes, open `tools/review.html` and show me any pairs that look wrong.
-
+- `tools/sources.json` maps each exercise's YouTube ID to its original recording in Dropbox, folder `Videos/PREGNANCY/Pregnancy Exercise Library/Fit Mom To Be Workouts`. Two exercises can share one recording (`searchFrom` says where the second one starts).
+- Copy those recordings into `tools/cache/` (ignored by git), then run `python tools/grab_frames.py`. Anything not in `sources.json` is downloaded from YouTube with yt-dlp instead.
 - It picks the frame just before the first rep starts as the start, and the most different frame within that rep as the end.
 - Check every pair in `tools/review.html`. Any it gets wrong (for example, you talking to camera), fix by adding the exact seconds to `tools/overrides.json` and running it again.
 - The player shows the two photos side by side with Start and End labels as soon as they exist.
