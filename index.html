@@ -1,0 +1,266 @@
+<title>Fit Mom To Be Workouts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap">
+<style>
+/* Layout: one phone column. Sticky phase bar, day tabs, then superset cards you work down; a rest timer docks at the bottom. */
+:root{
+  --bg:#fbf6f7; --card:#ffffff; --ink:#2d1b33; --muted:#7a6780; --line:#eadde3;
+  --accent:#d6307a; --accent-ink:#ffffff; --accent-soft:#fbe3ee; --done:#2f8f6a; --done-soft:#e2f3ea;
+  --display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body:"Figtree", "Helvetica Neue", system-ui, sans-serif;
+  --mono:"DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1b1220; --card:#261a2c; --ink:#f6eef4; --muted:#b9a6bf; --line:#3a2b41;
+  --accent:#ff5fa2; --accent-ink:#1b1220; --accent-soft:#3d1f33; --done:#5fd3a3; --done-soft:#1e3a30; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1b1220; --card:#261a2c; --ink:#f6eef4; --muted:#b9a6bf; --line:#3a2b41;
+  --accent:#ff5fa2; --accent-ink:#1b1220; --accent-soft:#3d1f33; --done:#5fd3a3; --done-soft:#1e3a30; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 120px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px 10px;
+  display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--line)}
+.brandrow{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.phase-pick{display:flex;gap:6px}
+.phase-pick button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font:600 13px/1 var(--body)}
+.phase-pick button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h1{font:800 clamp(28px,8vw,40px)/1 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px}
+.seg button{border:0;background:transparent;border-radius:10px;padding:10px;font-weight:700}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+
+.intro{display:flex;flex-direction:column;gap:10px}
+.intro p{margin:0;color:var(--muted);max-width:60ch}
+.video-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.video-link .play{flex:none;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center}
+.video-link small{display:block;color:var(--muted)}
+.placeholder{border-style:dashed}
+
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.days button{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px 8px;text-align:left;display:flex;flex-direction:column;gap:2px}
+.days button b{font:800 20px/1 var(--display)}
+.days button span{font-size:13px;color:var(--muted)}
+.days button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.days button.is-done span{color:var(--done);font-weight:700}
+
+.ss{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.ss-head{display:flex;justify-content:space-between;align-items:baseline;padding:14px 16px 4px;gap:8px}
+.ss-head h2{margin:0;font:800 18px/1.2 var(--display)}
+.ss-head span{font-size:13px;color:var(--muted)}
+.ss.complete{border-color:var(--done)}
+.ss.complete .ss-head span{color:var(--done);font-weight:700}
+.ex{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px 16px;border-top:1px solid var(--line)}
+.ex:first-of-type{border-top:0}
+.ex img{width:96px;height:84px;object-fit:cover;border-radius:12px;background:var(--accent-soft)}
+.ex .info{min-width:0;display:flex;flex-direction:column;gap:6px}
+.ex h3{margin:0;font:700 16px/1.25 var(--body)}
+.code{font:500 12px/1 var(--mono);color:var(--accent);margin-right:6px}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px/1 var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 7px;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--muted);margin:0}
+.row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.sets{display:flex;gap:8px}
+.sets button{width:40px;height:40px;border-radius:12px;border:2px solid var(--line);background:var(--bg);font:500 14px/1 var(--mono)}
+.sets button[aria-pressed="true"]{background:var(--done);border-color:var(--done);color:var(--card)}
+.demo{font-weight:700;font-size:14px;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;
+  border:0;background:none;padding:6px 0}
+.embed{grid-column:1/-1;aspect-ratio:16/9;max-width:100%;border-radius:12px;overflow:hidden;background:#000}
+.embed iframe{width:100%;height:100%;border:0}
+
+.finish{border:0;background:var(--ink);color:var(--bg);border-radius:16px;padding:16px;font:800 18px/1 var(--display)}
+.finish:disabled{opacity:.45;cursor:default}
+.week{text-align:center;color:var(--muted);font-size:14px;margin:0}
+.week b{color:var(--ink)}
+.done-card{background:var(--done-soft);border:1px solid var(--done);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.done-card h2{margin:0;font:800 24px/1.1 var(--display)}
+.done-card p{margin:0}
+.ex.has-pair{grid-template-columns:minmax(0,1fr)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pair figure{margin:0;position:relative}
+.pair img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--accent-soft)}
+.pair figcaption{position:absolute;left:8px;bottom:8px;font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;
+  background:var(--card);color:var(--ink);padding:5px 7px;border-radius:6px}
+
+.timer{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);color:var(--bg);
+  padding-block:14px calc(14px + env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.timer .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.timer .t{font:500 34px/1 var(--mono);font-variant-numeric:tabular-nums;min-width:3.2ch}
+.timer .lbl{flex:1;min-width:0;font-size:14px}
+.timer .lbl small{display:block;opacity:.7}
+.timer button{border:1px solid currentColor;background:transparent;border-radius:12px;padding:10px 14px;font-weight:700}
+.bar{position:absolute;left:0;top:0;height:3px;background:var(--accent);transition:width 1s linear}
+.err{background:var(--accent-soft);border-radius:14px;padding:14px}
+@media (prefers-reduced-motion:reduce){.bar{transition:none}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brandrow">
+      <span class="eyebrow" id="eyebrow">Fit Mom To Be · Phase 1</span>
+      <div class="phase-pick" id="phasePick" aria-label="Phase"></div>
+    </div>
+    <h1 id="phaseName">The Full Body Toner</h1>
+    <div class="seg" role="group" aria-label="Where are you working out?">
+      <button id="vGym" aria-pressed="true">Gym</button>
+      <button id="vHome" aria-pressed="false">Home</button>
+    </div>
+  </header>
+
+  <section class="intro" id="intro"></section>
+  <nav class="days" id="days" aria-label="Workout day"></nav>
+  <main id="workout" class="wrap" style="gap:14px"></main>
+  <p class="week" id="week"></p>
+</div>
+
+<div class="timer" id="timer" hidden>
+  <div class="bar" id="bar"></div>
+  <div class="in">
+    <div class="t" id="tLeft">60</div>
+    <div class="lbl"><span id="tTitle">Rest</span><small id="tNext"></small></div>
+    <button id="tPlus">+15s</button>
+    <button id="tSkip">Skip</button>
+  </div>
+</div>
+
+<script>
+const PHASES=[1,2];
+const EMBED_OK=!/claude|anthropic/i.test(location.hostname) && location.protocol!=='file:';
+const state={phase:1,version:'gym',day:1,data:{}};
+const $=s=>document.querySelector(s);
+const store={
+  get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+const key=()=>`fmtb:p${state.phase}:${state.version}:d${state.day}`;
+function weekStart(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d.getTime()}
+function weekCount(){return store.get('fmtb:log',[]).filter(t=>t>=weekStart()).length}
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+async function load(n){
+  if(state.data[n]) return state.data[n];
+  const r=await fetch(`data/fmtb-phase-${n}.json`);
+  if(!r.ok) throw new Error('Phase '+n+' did not load');
+  return state.data[n]=await r.json();
+}
+function restLabel(s){return s?`Rest ${s}s`:'No rest'}
+
+async function render(){
+  let p;
+  try{p=await load(state.phase)}catch(e){$('#workout').innerHTML=`<div class="err">This phase didn't load. Check your connection and refresh the page.</div>`;return}
+  $('#eyebrow').textContent=`Fit Mom To Be · Phase ${p.phase}`;
+  $('#phaseName').textContent=p.name;
+  $('#phasePick').innerHTML=PHASES.map(n=>`<button aria-pressed="${n===state.phase}" data-phase="${n}">Phase ${n}</button>`).join('');
+  $('#vGym').setAttribute('aria-pressed',state.version==='gym');
+  $('#vHome').setAttribute('aria-pressed',state.version==='home');
+
+  const vid=p.instructionVideo;
+  $('#intro').innerHTML=`<p>${esc(p.intro)}</p>`+(vid
+    ?(EMBED_OK
+      ?`<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/${esc(vid)}?rel=0&modestbranding=1&playsinline=1" title="Phase ${p.phase} instructions" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>`
+      :`<a class="video-link" href="https://www.youtube.com/watch?v=${esc(vid)}" target="_blank" rel="noopener"><span class="play">▶</span><span><b>Watch first: Phase ${p.phase} instructions</b><small>Michelle walks you through this month</small></span></a>`)
+    :`<div class="video-link placeholder"><span class="play">▶</span><span><b>Phase ${p.phase} instructions</b><small>Your instruction video goes here</small></span></div>`)
+    +[...(p.faqVideo?[{title:'Frequently asked questions',sub:'Watch this before you start',video:p.faqVideo,icon:'?'}]:[]),
+      ...(p.extras||[]).map(x=>({...x,sub:'Add these on any day',icon:'▶'}))]
+     .map((x,i)=>EMBED_OK
+      ?`<div id="ex-intro${i}" style="display:flex;flex-direction:column;gap:8px"><button class="video-link" style="text-align:left;width:100%" data-embed="${esc(x.video)}" data-code="intro${i}" data-label="${esc(x.title)}"><span class="play">${x.icon}</span><span><b>${esc(x.title)}</b><small>${x.sub}</small></span></button></div>`
+      :`<a class="video-link" href="https://www.youtube.com/watch?v=${esc(x.video)}" target="_blank" rel="noopener"><span class="play">${x.icon}</span><span><b>${esc(x.title)}</b><small>${x.sub}</small></span></a>`).join('');
+
+  $('#days').innerHTML=p.days.map(d=>{
+    const done=store.get(`fmtb:p${state.phase}:${state.version}:d${d.day}`,{}).finished;
+    return `<button aria-pressed="${d.day===state.day}" data-day="${d.day}" class="${done?'is-done':''}"><b>Day ${d.day}</b><span>${done?'Done':d.versions[state.version].reduce((a,s)=>a+s.exercises.length,0)+' exercises'}</span></button>`}).join('');
+
+  const day=p.days.find(d=>d.day===state.day);
+  const saved=store.get(key(),{ticks:{}});
+  const ss=day.versions[state.version];
+  let allDone=true;
+  let html=ss.map(s=>{
+    const n=s.exercises.length, kind=n===2?'Superset':n===3?'Giant set':'Set';
+    const sets=Math.max(...s.exercises.map(e=>+e.sets||0));
+    const complete=s.exercises.every(e=>(saved.ticks[e.code]||[]).filter(Boolean).length>=(+e.sets||0));
+    if(!complete) allDone=false;
+    return `<section class="ss ${complete?'complete':''}"><div class="ss-head"><h2>${s.label} · ${kind}</h2><span>${complete?'Done':`${sets} rounds, back to back`}</span></div>`+
+    s.exercises.map(e=>{
+      const t=saved.ticks[e.code]||[];
+      const btns=Array.from({length:+e.sets||0},(_,i)=>`<button aria-pressed="${!!t[i]}" aria-label="Set ${i+1} of ${e.name}" data-tick="${e.code}" data-i="${i}">${i+1}</button>`).join('');
+      const demo=e.video?(EMBED_OK
+        ?`<button class="demo" data-embed="${esc(e.video)}" data-code="${e.code}">▶ Watch demo</button>`
+        :`<a class="demo" href="https://www.youtube.com/watch?v=${esc(e.video)}" target="_blank" rel="noopener">▶ Watch demo</a>`)
+        :`<span class="note">Demo video coming soon</span>`;
+      const pair=e.startPhoto&&e.endPhoto;
+      const pic=pair
+        ?`<div class="pair"><figure><img src="${esc(e.startPhoto)}" alt="Start position for ${esc(e.name)}" loading="lazy"><figcaption>Start</figcaption></figure><figure><img src="${esc(e.endPhoto)}" alt="End position for ${esc(e.name)}" loading="lazy"><figcaption>End</figcaption></figure></div>`
+        :(e.photo?`<img src="${esc(e.photo)}" alt="Start and end position for ${esc(e.name)}" loading="lazy">`:'<span></span>');
+      return `<div class="ex${pair?' has-pair':''}" id="ex-${e.code}">
+        ${pic}
+        <div class="info"><h3><span class="code">${e.code}</span>${esc(e.name)}</h3>
+          <div class="meta"><span class="chip">${e.reps} reps</span><span class="chip">${e.sets} sets</span><span class="chip">Tempo ${esc(e.tempo)}</span><span class="chip">${restLabel(e.restSeconds)}</span></div>
+          ${e.note?`<p class="note">${esc(e.note)}</p>`:''}
+          <div class="row"><div class="sets">${btns}</div>${demo}</div>
+        </div></div>`}).join('')+`</section>`}).join('');
+
+  if(saved.finished){
+    html=`<div class="done-card"><h2>Day ${state.day} is done</h2><p>Nice work, mama. Grab your post-workout shake.</p></div>`+html;
+  }else{
+    html+=`<button class="finish" id="finish" ${allDone?'':'disabled'}>${allDone?'Finish workout':'Tick every set to finish'}</button>`;
+  }
+  $('#workout').innerHTML=html;
+  const w=weekCount();
+  $('#week').innerHTML=`<b>${w}</b> workout${w===1?'':'s'} done this week`;
+}
+
+let timer=null,left=0,total=0;
+function startRest(sec,label){
+  clearInterval(timer);left=total=sec;$('#tTitle').textContent='Rest';$('#tNext').textContent=label;
+  $('#timer').hidden=false;tick();timer=setInterval(()=>{left--;tick();if(left<=0)stopRest()},1000);
+}
+function tick(){$('#tLeft').textContent=Math.max(left,0);$('#bar').style.width=(total?100*(total-left)/total:0)+'%'}
+function stopRest(){clearInterval(timer);$('#timer').hidden=true}
+$('#tSkip').onclick=stopRest;
+$('#tPlus').onclick=()=>{left+=15;total+=15;tick()};
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.phase){state.phase=+b.dataset.phase;state.day=1;stopRest();render();return}
+  if(b.dataset.day){state.day=+b.dataset.day;stopRest();render();return}
+  if(b.dataset.tick){
+    const s=store.get(key(),{ticks:{}});const arr=s.ticks[b.dataset.tick]||[];const i=+b.dataset.i;
+    arr[i]=!arr[i];s.ticks[b.dataset.tick]=arr;store.set(key(),s);
+    if(arr[i]){
+      const p=state.data[state.phase],day=p.days.find(d=>d.day===state.day);
+      const grp=day.versions[state.version].find(g=>g.exercises.some(x=>x.code===b.dataset.tick));
+      const ex=grp.exercises.find(x=>x.code===b.dataset.tick);
+      const last=grp.exercises[grp.exercises.length-1].code===ex.code;
+      const rest=last?ex.restSeconds:0;
+      if(rest>0) startRest(rest,`Round ${i+1} of ${grp.label} done`);
+    }
+    render();return;
+  }
+  if(b.dataset.embed){
+    const host=document.getElementById('ex-'+b.dataset.code);
+    const open=host.querySelector('.embed');
+    const labeled=!!b.dataset.label;
+    if(open){open.remove();if(!labeled)b.textContent='▶ Watch demo';return}
+    const d=document.createElement('div');d.className='embed';
+    d.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.embed}?rel=0&modestbranding=1&playsinline=1&autoplay=1" title="${labeled?esc(b.dataset.label):'Exercise demo'}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    host.appendChild(d);if(!labeled)b.textContent='✕ Close demo';return;
+  }
+  if(b.id==='finish'&&!b.disabled){
+    const s=store.get(key(),{ticks:{}});s.finished=Date.now();store.set(key(),s);
+    const log=store.get('fmtb:log',[]);log.push(Date.now());store.set('fmtb:log',log);
+    stopRest();render();window.scrollTo({top:0,behavior:'smooth'});return;
+  }
+  if(b.id==='vGym'||b.id==='vHome'){state.version=b.id==='vGym'?'gym':'home';stopRest();render();return}
+});
+const h=(location.hash.match(/phase-(\d)/)||[])[1];if(h&&PHASES.includes(+h))state.phase=+h;
+render();
+</script>
