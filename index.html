@@ -136,7 +136,7 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 <script>
 const PHASES=[1,2];
 const EMBED_OK=!/claude|anthropic/i.test(location.hostname) && location.protocol!=='file:';
-const state={phase:1,version:'gym',day:1,data:{},open:new Set(),justOpened:null};
+const state={phase:1,version:'gym',day:1,data:{},open:new Set(),justOpened:null,locked:false};
 const $=s=>document.querySelector(s);
 const store={
   get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
@@ -175,7 +175,7 @@ async function render(){
   try{p=await load(state.phase)}catch(e){$('#workout').innerHTML=`<div class="err">This phase didn't load. Check your connection and refresh the page.</div>`;return}
   $('#eyebrow').textContent=`Fit Mom To Be · Phase ${p.phase}`;
   $('#phaseName').textContent=p.name;
-  $('#phasePick').innerHTML=PHASES.map(n=>`<button aria-pressed="${n===state.phase}" data-phase="${n}">Phase ${n}</button>`).join('');
+  $('#phasePick').innerHTML=state.locked?'':PHASES.map(n=>`<button aria-pressed="${n===state.phase}" data-phase="${n}">Phase ${n}</button>`).join('');
   $('#vGym').setAttribute('aria-pressed',state.version==='gym');
   $('#vHome').setAttribute('aria-pressed',state.version==='home');
 
@@ -298,6 +298,8 @@ document.addEventListener('click',e=>{
   }
   if(b.id==='vGym'||b.id==='vHome'){state.version=b.id==='vGym'?'gym':'home';stopRest();render();return}
 });
-const h=(location.hash.match(/phase-(\d)/)||[])[1];if(h&&PHASES.includes(+h))state.phase=+h;
+// #phase-3 in a lesson link shows only Phase 3 (drip-safe). #all shows every phase with a picker (lifetime access).
+const h=(location.hash.match(/phase-(\d+)/)||[])[1];
+if(h&&PHASES.includes(+h)){state.phase=+h;state.locked=true}
 render();
 </script>
