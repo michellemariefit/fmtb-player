@@ -95,7 +95,7 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 .pair figcaption{position:absolute;left:8px;bottom:8px;font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;
   background:var(--card);color:var(--ink);padding:5px 7px;border-radius:6px}
 
-.rest{position:relative;overflow:hidden;margin-top:4px;background:var(--brand);color:var(--card);border-radius:14px;
+.rest{grid-column:1/-1;position:relative;overflow:hidden;margin-top:2px;background:var(--brand);color:var(--card);border-radius:14px;
   padding:14px 14px 12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .rest .t{font:600 40px/1 var(--mono);font-variant-numeric:tabular-nums;min-width:2.4ch}
 .rest .lbl{flex:1;min-width:120px;font-size:14px;font-weight:700}
@@ -136,7 +136,7 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 <script>
 const PHASES=[1,2];
 const EMBED_OK=!/claude|anthropic/i.test(location.hostname) && location.protocol!=='file:';
-const state={phase:1,version:'gym',day:1,data:{}};
+const state={phase:1,version:'gym',day:1,data:{},open:new Set(),justOpened:null};
 const $=s=>document.querySelector(s);
 const store={
   get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
@@ -210,8 +210,9 @@ async function render(){
       const t=saved.ticks[e.code]||[];
       const next=s.exercises[ei+1]?.code;
       const btns=Array.from({length:+e.sets||0},(_,i)=>`<button aria-pressed="${!!t[i]}" aria-label="Set ${i+1} of ${e.name}" data-tick="${e.code}" data-i="${i}">Set ${i+1}</button>`).join('');
+      const isOpen=state.open.has(e.code);
       const demo=e.video?(EMBED_OK
-        ?`<button class="demo" data-embed="${esc(e.video)}" data-code="${e.code}">▶ Watch demo</button>`
+        ?`<button class="demo" data-embed="${esc(e.video)}" data-code="${e.code}">${isOpen?'✕ Close demo':'▶ Watch demo'}</button>`
         :`<a class="demo" href="https://www.youtube.com/watch?v=${esc(e.video)}" target="_blank" rel="noopener">▶ Watch demo</a>`)
         :`<span class="note">Demo video coming soon</span>`;
       const pair=e.startPhoto&&e.endPhoto;
@@ -224,8 +225,11 @@ async function render(){
           <div class="meta"><span class="chip">${e.reps} reps</span><span class="chip">${e.sets} sets</span><span class="chip">Tempo ${esc(e.tempo)}</span><span class="chip">${restLabel(e.restSeconds,next)}</span></div>
           ${e.note?`<p class="note">${esc(e.note)}</p>`:''}
           <div class="row"><div class="sets">${btns}</div>${demo}</div>
-          ${rest&&rest.code===e.code?restHTML():''}
-        </div></div>`}).join('')+`</section>`}).join('');
+        </div>
+        ${isOpen&&EMBED_OK?`<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/${esc(e.video)}?rel=0&modestbranding=1&playsinline=1${state.justOpened===e.code?'&autoplay=1':''}" title="${esc(e.name)} demo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>`:''}
+        ${rest&&rest.code===e.code?restHTML():''}
+        </div>`}).join('')+`</section>`}).join('');
+  state.justOpened=null;
 
   if(saved.finished){
     html=`<div class="done-card"><h2>Day ${state.day} is done</h2><p>Nice work, mama. Grab your post-workout shake.</p></div>`+html;
@@ -273,6 +277,11 @@ document.addEventListener('click',e=>{
     if(rest){rest.left+=15;rest.total+=15;tick()}return;
   }
   if(b.dataset.howto){store.set('fmtb:howto',b.dataset.howto==='hide');render();return}
+  if(b.dataset.embed&&!b.dataset.label){
+    const c=b.dataset.code;
+    if(state.open.has(c))state.open.delete(c);else{state.open.add(c);state.justOpened=c}
+    render();return;
+  }
   if(b.dataset.embed){
     const host=document.getElementById('ex-'+b.dataset.code);
     const open=host.querySelector('.embed');
