@@ -364,14 +364,16 @@
             "exercises": [
               {
                 "code": "B1",
-                "name": "Incline Cable Presses",
+                "name": "Cable Flys",
                 "reps": 12,
                 "sets": 2,
                 "restSeconds": 0,
                 "tempo": "311",
-                "video": "03yTjkLx8Bk",
-                "photo": "images/incline-cable-presses.webp",
-                "note": ""
+                "video": "wA44NHH3its",
+                "photo": "images/cable-flys.webp",
+                "note": "",
+                "startPhoto": "images/wA44NHH3its-start.webp",
+                "endPhoto": "images/wA44NHH3its-end.webp"
               },
               {
                 "code": "B2",
@@ -694,14 +696,16 @@
               },
               {
                 "code": "B2",
-                "name": "Cable Incline Presses",
+                "name": "Cable Flys",
                 "reps": 30,
                 "sets": 2,
                 "restSeconds": 60,
                 "tempo": "311",
-                "video": "03yTjkLx8Bk",
-                "photo": "images/cable-incline-presses.webp",
-                "note": ""
+                "video": "wA44NHH3its",
+                "photo": "images/cable-flys.webp",
+                "note": "",
+                "startPhoto": "images/wA44NHH3its-start.webp",
+                "endPhoto": "images/wA44NHH3its-end.webp"
               }
             ]
           },

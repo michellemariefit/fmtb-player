@@ -33,6 +33,10 @@ META = {
 }
 # The Word files link one YouTube video for two different exercises in a few places.
 VIDEO_FIX = {("0WtcBgPcHYs", "overhead"): "uicoxUY-unM"}
+# Videos Michelle supplied later for exercises the Word files had no link for, by name.
+VIDEO_BY_NAME = [(r"tubing fly", "2Y0TlHw_BhU"), (r"barbell curl", "DfrY9Mgnq58")]
+# Exercises swapped after the fact: (old video id) -> (new name, new video id).
+SWAP = {"03yTjkLx8Bk": ("Cable Flys", "wA44NHH3its")}
 NAME_FIX = [(r"extensi[oó]n", "extension"), (r"[’']s\b", "s"), (r"\s+", " "), (r"\s*\.\s*$", "")]
 
 
@@ -169,6 +173,11 @@ def build_version(exs):
         for (vid, word), fixed in VIDEO_FIX.items():
             if video == vid and word in name.lower():
                 video = fixed
+        if not video:
+            video = next((v for pat, v in VIDEO_BY_NAME if re.search(pat, name, re.I)), None)
+        if video in SWAP:
+            suffix = re.sub(r"(?i)(cable incline|incline cable) press(es)?", "", name).strip()
+            name, video = (SWAP[video][0] + (" " + suffix if suffix else "")), SWAP[video][1]
         ex = {"code": e["code"], "name": name, "reps": reps, "sets": parse_sets(e["sets"]),
               "restSeconds": parse_rest(e["rest"]), "tempo": e["tempo"].strip(" -") , "video": video,
               "photo": save_thumb(e["imgs"][0], name) if e["imgs"] else "", "note": note_for(name, reps)}

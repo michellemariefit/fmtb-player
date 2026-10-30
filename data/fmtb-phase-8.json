@@ -365,14 +365,16 @@
             "exercises": [
               {
                 "code": "A1",
-                "name": "Incline Cable presses 1 1/2",
+                "name": "Cable Flys 1 1/2",
                 "reps": 15,
                 "sets": 2,
                 "restSeconds": 0,
                 "tempo": "211",
-                "video": "03yTjkLx8Bk",
-                "photo": "images/incline-cable-presses-1-1-2.webp",
-                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one."
+                "video": "wA44NHH3its",
+                "photo": "images/cable-flys-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/wA44NHH3its-start.webp",
+                "endPhoto": "images/wA44NHH3its-end.webp"
               },
               {
                 "code": "A2",
@@ -727,14 +729,16 @@
               },
               {
                 "code": "A2",
-                "name": "Cable Incline Presses 1 1/2",
+                "name": "Cable Flys 1 1/2",
                 "reps": 15,
                 "sets": 2,
                 "restSeconds": 0,
                 "tempo": "211",
-                "video": "03yTjkLx8Bk",
-                "photo": "images/cable-incline-presses-1-1-2.webp",
-                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one."
+                "video": "wA44NHH3its",
+                "photo": "images/cable-flys-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/wA44NHH3its-start.webp",
+                "endPhoto": "images/wA44NHH3its-end.webp"
               },
               {
                 "code": "A3",

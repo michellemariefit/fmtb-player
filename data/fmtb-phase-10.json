@@ -14,14 +14,16 @@
             "exercises": [
               {
                 "code": "A1",
-                "name": "Cable Incline Presses",
+                "name": "Cable Flys",
                 "reps": 30,
                 "sets": 2,
                 "restSeconds": 0,
                 "tempo": "211",
-                "video": "03yTjkLx8Bk",
-                "photo": "images/cable-incline-presses.webp",
-                "note": ""
+                "video": "wA44NHH3its",
+                "photo": "images/cable-flys.webp",
+                "note": "",
+                "startPhoto": "images/wA44NHH3its-start.webp",
+                "endPhoto": "images/wA44NHH3its-end.webp"
               },
               {
                 "code": "A2",
@@ -564,7 +566,7 @@
                 "sets": 2,
                 "restSeconds": 90,
                 "tempo": "211",
-                "video": null,
+                "video": "DfrY9Mgnq58",
                 "photo": "images/barbell-curls.webp",
                 "note": ""
               }
@@ -657,7 +659,7 @@
                 "sets": 2,
                 "restSeconds": 90,
                 "tempo": "211",
-                "video": null,
+                "video": "DfrY9Mgnq58",
                 "photo": "images/barbell-curls.webp",
                 "note": ""
               }
