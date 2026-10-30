@@ -134,7 +134,7 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 </div>
 
 <script>
-const PHASES=[1,2];
+const PHASES=[1,2,3,4,5,6,7,8,9,10];
 const EMBED_OK=!/claude|anthropic/i.test(location.hostname) && location.protocol!=='file:';
 const state={phase:1,version:'gym',day:1,data:{},open:new Set(),justOpened:null,locked:false};
 const $=s=>document.querySelector(s);
@@ -201,7 +201,7 @@ async function render(){
   const ss=day.versions[state.version];
   let allDone=true;
   let html=ss.map(s=>{
-    const n=s.exercises.length, kind=n===2?'Superset':n===3?'Giant set':'Set';
+    const n=s.exercises.length, kind=n===2?'Superset':n===3?'Giant set':n>=4?'Circuit':'Set';
     const sets=Math.max(...s.exercises.map(e=>+e.sets||0));
     const complete=s.exercises.every(e=>(saved.ticks[e.code]||[]).filter(Boolean).length>=(+e.sets||0));
     if(!complete) allDone=false;
@@ -222,7 +222,7 @@ async function render(){
       return `<div class="ex${pair?' has-pair':''}" id="ex-${e.code}">
         ${pic}
         <div class="info"><h3><span class="code">${e.code}</span>${esc(e.name)}</h3>
-          <div class="meta"><span class="chip">${e.reps} reps</span><span class="chip">${e.sets} sets</span><span class="chip">Tempo ${esc(e.tempo)}</span><span class="chip">${restLabel(e.restSeconds,next)}</span></div>
+          <div class="meta"><span class="chip">${/s$/.test(String(e.reps))?`Hold ${esc(e.reps)}`:`${esc(e.reps)} reps`}</span><span class="chip">${e.sets} sets</span>${e.tempo?`<span class="chip">Tempo ${esc(e.tempo)}</span>`:''}<span class="chip">${restLabel(e.restSeconds,next)}</span></div>
           ${e.note?`<p class="note">${esc(e.note)}</p>`:''}
           <div class="row"><div class="sets">${btns}</div>${demo}</div>
         </div>
@@ -299,7 +299,10 @@ document.addEventListener('click',e=>{
   if(b.id==='vGym'||b.id==='vHome'){state.version=b.id==='vGym'?'gym':'home';stopRest();render();return}
 });
 // #phase-3 in a lesson link shows only Phase 3 (drip-safe). #all shows every phase with a picker (lifetime access).
-const h=(location.hash.match(/phase-(\d+)/)||[])[1];
-if(h&&PHASES.includes(+h)){state.phase=+h;state.locked=true}
-render();
+function readHash(){
+  const h=(location.hash.match(/phase-(\d+)/)||[])[1];
+  if(h&&PHASES.includes(+h)){state.phase=+h;state.locked=true}else{state.locked=false}
+}
+readHash();render();
+window.addEventListener('hashchange',()=>{readHash();state.day=1;stopRest();render()});
 </script>

@@ -1,0 +1,962 @@
+{
+  "program": "FMTB",
+  "phase": 6,
+  "name": "Leveled Up Prego",
+  "intro": "2 sets. Each lettered group is a superset: do every exercise in it back to back, then rest.",
+  "instructionVideo": "kO5UMYU2OW0",
+  "days": [
+    {
+      "day": 1,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Step with Hip Flexion",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "mx-hwFO6Nik",
+                "photo": "images/step-with-hip-flexion.webp",
+                "note": "",
+                "startPhoto": "images/mx-hwFO6Nik-start.webp",
+                "endPhoto": "images/mx-hwFO6Nik-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Plie Squat",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squat.webp",
+                "note": "",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Decline Cable Presses",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "rDquo3Hbo3k",
+                "photo": "images/decline-cable-presses.webp",
+                "note": "",
+                "startPhoto": "images/rDquo3Hbo3k-start.webp",
+                "endPhoto": "images/rDquo3Hbo3k-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Pushups",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Stability Ball Hip extensions",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "ZxgZ7J5r8Sw",
+                "photo": "images/stability-ball-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+                "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Stability Ball Leg Curl",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl.webp",
+                "note": "",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Lat Pulldowns",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "HkHOXxm9d4I",
+                "photo": "images/lat-pulldowns.webp",
+                "note": "",
+                "startPhoto": "images/HkHOXxm9d4I-start.webp",
+                "endPhoto": "images/HkHOXxm9d4I-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Standing Cable Rows",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "eWc9NhClP68",
+                "photo": "images/standing-cable-rows.webp",
+                "note": "",
+                "startPhoto": "images/eWc9NhClP68-start.webp",
+                "endPhoto": "images/eWc9NhClP68-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Dumbbell shoulder press",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "nj0FUHY7rko",
+                "photo": "images/dumbbell-shoulder-press.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Up UP Down Down",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "bPhRJDMpCrU",
+                "photo": "images/up-up-down-down.webp",
+                "note": "",
+                "startPhoto": "images/bPhRJDMpCrU-start.webp",
+                "endPhoto": "images/bPhRJDMpCrU-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Step with Hip Flexion",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "mx-hwFO6Nik",
+                "photo": "images/step-with-hip-flexion.webp",
+                "note": "",
+                "startPhoto": "images/mx-hwFO6Nik-start.webp",
+                "endPhoto": "images/mx-hwFO6Nik-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Plie Squat",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squat.webp",
+                "note": "",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Wall pushups",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Pushups",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Stability Ball Hip extensions",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "ZxgZ7J5r8Sw",
+                "photo": "images/stability-ball-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+                "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Stability Ball Leg Curl",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl.webp",
+                "note": "",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Dumbbell Straight Arm pulldowns",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "Qjk3y42nTBg",
+                "photo": "images/dumbbell-straight-arm-pulldowns.webp",
+                "note": "",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Dumbbell Rows",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows.webp",
+                "note": "",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Dumbbell shoulder press",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "nj0FUHY7rko",
+                "photo": "images/dumbbell-shoulder-press.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Up UP Down Down",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "bPhRJDMpCrU",
+                "photo": "images/up-up-down-down.webp",
+                "note": "",
+                "startPhoto": "images/bPhRJDMpCrU-start.webp",
+                "endPhoto": "images/bPhRJDMpCrU-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Stationary Lunges",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "bLZPKMxGQ2o",
+                "photo": "images/stationary-lunges.webp",
+                "note": "",
+                "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+                "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Dumbbell Squats",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "6CbpPRbbDb8",
+                "photo": "images/dumbbell-squats.webp",
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Incline Cable Presses",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "03yTjkLx8Bk",
+                "photo": "images/incline-cable-presses.webp",
+                "note": ""
+              },
+              {
+                "code": "B2",
+                "name": "Cable fly",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "b964joHYGw0",
+                "photo": "images/cable-fly.webp",
+                "note": "",
+                "startPhoto": "images/b964joHYGw0-start.webp",
+                "endPhoto": "images/b964joHYGw0-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Deadlifts",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "q8RHLWKgRqY",
+                "photo": "images/deadlifts.webp",
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Stability Ball Leg Curls",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curls.webp",
+                "note": "",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Dumbbell High Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Straight arm pulldown",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "Qjk3y42nTBg",
+                "photo": "images/straight-arm-pulldown.webp",
+                "note": "",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Lateral Raises",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises.webp",
+                "note": "",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Arm Raises",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "BnAjbBXgNIc",
+                "photo": "images/arm-raises.webp",
+                "note": "",
+                "startPhoto": "images/BnAjbBXgNIc-start.webp",
+                "endPhoto": "images/BnAjbBXgNIc-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Stationary Lunges",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "bLZPKMxGQ2o",
+                "photo": "images/stationary-lunges.webp",
+                "note": "",
+                "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+                "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Dumbbell Squats",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "6CbpPRbbDb8",
+                "photo": "images/dumbbell-squats.webp",
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Wall pushups",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Pushups",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Deadlifts",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "q8RHLWKgRqY",
+                "photo": "images/deadlifts.webp",
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Stability Ball Leg Curls",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curls.webp",
+                "note": "",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Dumbbell High Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Dumbbell Reverse Flys",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "Iz7ym9Zu6vY",
+                "photo": "images/dumbbell-reverse-flys.webp",
+                "note": "",
+                "startPhoto": "images/Iz7ym9Zu6vY-start.webp",
+                "endPhoto": "images/Iz7ym9Zu6vY-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Lateral Raises",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises.webp",
+                "note": "",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Arm Raises",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "BnAjbBXgNIc",
+                "photo": "images/arm-raises.webp",
+                "note": "",
+                "startPhoto": "images/BnAjbBXgNIc-start.webp",
+                "endPhoto": "images/BnAjbBXgNIc-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Leg extensions",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "VIt03PSoH34",
+                "photo": "images/leg-extensions.webp",
+                "note": "",
+                "startPhoto": "images/VIt03PSoH34-start.webp",
+                "endPhoto": "images/VIt03PSoH34-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Lateral Lunges",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "j6PWWcyeUno",
+                "photo": "images/lateral-lunges.webp",
+                "note": "",
+                "startPhoto": "images/j6PWWcyeUno-start.webp",
+                "endPhoto": "images/j6PWWcyeUno-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Decline Cable Flys",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "uYYaYF420Uk",
+                "photo": "images/decline-cable-flys.webp",
+                "note": "",
+                "startPhoto": "images/uYYaYF420Uk-start.webp",
+                "endPhoto": "images/uYYaYF420Uk-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Cable Incline Presses",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "03yTjkLx8Bk",
+                "photo": "images/cable-incline-presses.webp",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Supine Stability Ball Single Leg hip extensions",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3swvJ_oGOx4",
+                "photo": "images/supine-stability-ball-single-leg-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/3swvJ_oGOx4-start.webp",
+                "endPhoto": "images/3swvJ_oGOx4-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Standing Single Leg Curl",
+                "reps": "30 per side",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "aah0EyOHpXw",
+                "photo": "images/standing-single-leg-curl.webp",
+                "note": "",
+                "startPhoto": "images/aah0EyOHpXw-start.webp",
+                "endPhoto": "images/aah0EyOHpXw-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Cable High Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "eWc9NhClP68",
+                "photo": "images/cable-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/eWc9NhClP68-start.webp",
+                "endPhoto": "images/eWc9NhClP68-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Dumbbell Rows",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows.webp",
+                "note": "",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Upright Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows.webp",
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Shoulder Presses",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "nj0FUHY7rko",
+                "photo": "images/shoulder-presses.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Dumbbell Squat",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "6CbpPRbbDb8",
+                "photo": "images/dumbbell-squat.webp",
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Lateral Lunges",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "j6PWWcyeUno",
+                "photo": "images/lateral-lunges.webp",
+                "note": "",
+                "startPhoto": "images/j6PWWcyeUno-start.webp",
+                "endPhoto": "images/j6PWWcyeUno-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Pushups",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Wall Pushups",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Supine Stability Ball Single Leg hip extensions",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3swvJ_oGOx4",
+                "photo": "images/supine-stability-ball-single-leg-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/3swvJ_oGOx4-start.webp",
+                "endPhoto": "images/3swvJ_oGOx4-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Stability Ball Single leg Curl",
+                "reps": "30 per side",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "IIU529JnoZQ",
+                "photo": "images/stability-ball-single-leg-curl.webp",
+                "note": "",
+                "startPhoto": "images/IIU529JnoZQ-start.webp",
+                "endPhoto": "images/IIU529JnoZQ-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "exercises": [
+              {
+                "code": "D1",
+                "name": "Dumbbell High Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              },
+              {
+                "code": "D2",
+                "name": "Dumbbell Rows",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows.webp",
+                "note": "",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "exercises": [
+              {
+                "code": "E1",
+                "name": "Upright Rows",
+                "reps": 12,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows.webp",
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "E2",
+                "name": "Shoulder Presses",
+                "reps": 30,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "nj0FUHY7rko",
+                "photo": "images/shoulder-presses.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -188,36 +188,57 @@
       3.2
     ]
   },
-  "7FcLkHdf4Js": {
-    "name": "DB shoulder press Neutral grip",
+  "HkHOXxm9d4I": {
+    "name": "Lat Pulldowns",
     "t": [
-      3.2,
-      8.0
+      9.8,
+      10.8
+    ]
+  },
+  "Iz7ym9Zu6vY": {
+    "name": "Dumbbell Reverse Flys",
+    "t": [
+      5.0,
+      6.0
+    ]
+  },
+  "hYDdcmwFUY8": {
+    "name": "Bowlers",
+    "t": [
+      10.5,
+      15.0
+    ]
+  },
+  "NRT9m0Ni65o": {
+    "name": "Supine Stability Ball Hip extensions Both legs down",
+    "t": [
+      2.5,
+      6.3
     ]
   },
   "Vtc9jfIdgMQ": {
-    "name": "Rope overhead extension",
+    "name": "Rope Overhead extensions",
     "t": [
       16.8,
       17.5
     ]
   },
   "MN8TSbqwAOM": {
-    "name": "Rope pulldown",
+    "name": "Rope Pulldowns",
     "t": [
       7.0,
       2.2
     ]
   },
-  "Byr6dH1c0S4": {
-    "name": "Tricep pulldown Underhand grip",
+  "iJcMgzNCkV0": {
+    "name": "Dumbbell Hammer Curls",
     "t": [
       12.5,
-      13.5
+      13.8
     ]
   },
   "uicoxUY-unM": {
-    "name": "Seated Overhead Dumbell Triceps Extension",
+    "name": "Dumbbell Overhead extensions",
     "t": [
       4.3,
       2.2
@@ -228,6 +249,20 @@
     "t": [
       3.3,
       5.5
+    ]
+  },
+  "7FcLkHdf4Js": {
+    "name": "DB shoulder press Neutral grip",
+    "t": [
+      3.2,
+      8.0
+    ]
+  },
+  "Byr6dH1c0S4": {
+    "name": "Tricep pulldown Underhand grip",
+    "t": [
+      12.5,
+      13.5
     ]
   },
   "esCBtaMbKg8": {
@@ -251,13 +286,6 @@
       52.5
     ]
   },
-  "HkHOXxm9d4I": {
-    "name": "Lat Pulldowns",
-    "t": [
-      9.8,
-      10.8
-    ]
-  },
   "uNKYHNCl07I": {
     "name": "Cable bicep curl",
     "t": [
@@ -265,18 +293,123 @@
       12.5
     ]
   },
-  "iJcMgzNCkV0": {
-    "name": "Dumbbell Hammer Curl",
-    "t": [
-      12.5,
-      13.8
-    ]
-  },
   "WbuvVZAbhPY": {
     "name": "Dumbbell Bicep Curls",
     "t": [
       12.5,
       13.8
+    ]
+  },
+  "rDquo3Hbo3k": {
+    "name": "Seated or Standing Decline Cable Press",
+    "t": [
+      3.0,
+      4.0
+    ]
+  },
+  "nj0FUHY7rko": {
+    "name": "Dumbbell Shoulder Presses",
+    "t": [
+      2.0,
+      3.0
+    ]
+  },
+  "CE3Tt5IGOXk": {
+    "name": "Plank",
+    "t": [
+      3.0,
+      16.0
+    ]
+  },
+  "IvXGVym4t_Y": {
+    "name": "Triceps Kickback (underhand grip) Drop Set",
+    "t": [
+      52.4,
+      55.0
+    ]
+  },
+  "96_WMj_P_2M": {
+    "name": "CAT",
+    "t": [
+      2.5,
+      4.0
+    ]
+  },
+  "C-9m7oaYs0M": {
+    "name": "Dumbbell Straight Arm Pulldowns",
+    "t": [
+      2.0,
+      1.5
+    ]
+  },
+  "CN4AyMsLts4": {
+    "name": "Single Leg Squats",
+    "t": [
+      2.8,
+      6.2
+    ]
+  },
+  "0WtcBgPcHYs": {
+    "name": "Dumbbell Kickbacks",
+    "t": [
+      2.8,
+      6.8
+    ]
+  },
+  "p64l50X9lec": {
+    "name": "Bulgarian Split Squats",
+    "t": [
+      2.2,
+      5.3
+    ]
+  },
+  "My0l8iRhH_w": {
+    "name": "Single Leg Hip extension On Toes",
+    "t": [
+      2.5,
+      3.2
+    ]
+  },
+  "Xqo_6MaC0qY": {
+    "name": "Quadruped Straight Leg Kicks",
+    "t": [
+      33.2,
+      35.9
+    ]
+  },
+  "57V67yN3nh4": {
+    "name": "Side Kicks",
+    "t": [
+      3.5,
+      3.0
+    ]
+  },
+  "l57iQfIG44Y": {
+    "name": "Rope Bicep Curls",
+    "t": [
+      2.0,
+      2.5
+    ]
+  },
+  "bPhRJDMpCrU": {
+    "name": "Up UP Down Down",
+    "t": [
+      8.0,
+      16.0
+    ]
+  },
+  "BnAjbBXgNIc": {
+    "name": "Arm Raises",
+    "t": [
+      4.3,
+      8.8
+    ]
+  },
+  "WVfg-Hizz50": {
+    "name": "Single leg Reaches",
+    "t": [
+      3.3,
+      6.0
     ]
   }
 }

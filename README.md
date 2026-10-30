@@ -17,19 +17,26 @@ One mobile web page that replaces the monthly gym and home PDFs.
 
 ## Put it in GHL
 
-In each phase lesson, add a custom code block with:
+Each phase has its own lesson in the course, and GHL drips the lessons every 30 days. The player is one web page that shows whichever phase the link asks for, so every lesson gets the same code with a different number at the end:
 
 ```html
-<iframe src="https://<your-username>.github.io/fmtb-player/#phase-1" style="width:100%;height:1400px;border:0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://michellemariefit.github.io/fmtb-player/#phase-1" style="width:100%;height:1400px;border:0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 ```
 
-Change `#phase-1` to match the lesson.
+Change `#phase-1` to `#phase-2` in the Phase 2 lesson, and so on up to `#phase-10`. A link with a phase number shows only that phase and hides the phase picker, so a member in the Phase 3 lesson can't jump ahead. The drip itself is GHL's job: set each module to unlock 30 days after the one before, as the PDFs do today.
 
-## Add the next phases (in Claude Code)
+For lifetime members, link to the page with no phase number: `https://michellemariefit.github.io/fmtb-player/`. That shows every phase with a picker at the top.
 
-Give Claude Code this folder plus the Dropbox Word files for the next phase and ask:
+## Build a phase from the Word files
 
-> Read the gym and home Word files for Phase 3. Pull every exercise, its YouTube link and its photo, and write `data/fmtb-phase-3.json` in the same shape as `fmtb-phase-2.json`. Save the photos to `images/` as WebP. Add 3 to the `PHASES` list in `index.html`.
+`tools/build_phases.py` reads the gym and home Word files and writes `data/fmtb-phase-N.json`. Put the files in `tools/docx/` (ignored by git) as `gym-03.docx` and `home-03.docx`, then:
+
+```
+pip install python-docx pillow
+python tools/build_phases.py 3
+```
+
+It pulls every exercise, its reps, sets, rest, tempo, YouTube link and thumbnail. Drop sets and 1 1/2 reps get a note. Core finishers without a letter (Plank, CAT) become their own group at the end. Phase names and instruction videos live in the `META` table at the top of the script. Then run `grab_frames.py` for the start and end photos.
 
 ## Better start and end photos
 
@@ -62,5 +69,6 @@ Pulled from the GHL lessons. Put each one in `instructionVideo` when you add tha
 
 ## Still to fill in
 
-- Barbell Curl Close Grip (Phase 2, Day 3, gym and home) has no demo video in the Word files.
-- The photos are small thumbnails from the Word files. Higher-resolution versions would look sharper on newer phones.
+- Barbell Curls (phases 2, 3, 4, 5, 7, 9, 10) and Tubing Flys (phases 3 and 4, home) have no demo video in the Word files, so those cards say "Demo video coming soon" and keep the Word thumbnail.
+- Cable Incline Presses on the seated machine (YouTube 03yTjkLx8Bk) has no recording in the Dropbox folder, so it keeps its Word thumbnail.
+- Supine Stability Ball Hip Extensions Both Legs Down (Phase 10, Day 2, gym) has no link in the Word file.

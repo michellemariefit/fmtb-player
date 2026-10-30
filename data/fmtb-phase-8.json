@@ -1,0 +1,1058 @@
+{
+  "program": "FMTB",
+  "phase": 8,
+  "name": "The Lean Mama Slay",
+  "intro": "2 sets. Each lettered group is a circuit: do every exercise in it back to back, then rest.",
+  "instructionVideo": "-lFGJfiaMXs",
+  "days": [
+    {
+      "day": 1,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Seated Cable presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "SZjQls3qRBQ",
+                "photo": "images/seated-cable-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/SZjQls3qRBQ-start.webp",
+                "endPhoto": "images/SZjQls3qRBQ-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Stationary Lunges 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "bLZPKMxGQ2o",
+                "photo": "images/stationary-lunges-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+                "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Plie Squats 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squats-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "The CAT",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "straight arm pulldowns 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Qjk3y42nTBg",
+                "photo": "images/straight-arm-pulldowns-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Standing Cable Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "MRdO7Py--Rk",
+                "photo": "images/standing-cable-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/MRdO7Py--Rk-start.webp",
+                "endPhoto": "images/MRdO7Py--Rk-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball leg curl 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball hip extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "ZxgZ7J5r8Sw",
+                "photo": "images/stability-ball-hip-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+                "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "Plank",
+                "reps": "30-45s",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Shoulder Presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "nj0FUHY7rko",
+                "photo": "images/shoulder-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Lateral raises 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Wall Pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Stationary Lunges 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "bLZPKMxGQ2o",
+                "photo": "images/stationary-lunges-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+                "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Plie Squats 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squats-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "The CAT",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell Straight Arm Pulldowns 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Qjk3y42nTBg",
+                "photo": "images/dumbbell-straight-arm-pulldowns-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Dumbbell Reverse Flys 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Iz7ym9Zu6vY",
+                "photo": "images/dumbbell-reverse-flys-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Iz7ym9Zu6vY-start.webp",
+                "endPhoto": "images/Iz7ym9Zu6vY-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball leg curl 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball hip extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "ZxgZ7J5r8Sw",
+                "photo": "images/stability-ball-hip-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+                "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "Plank",
+                "reps": "30-45s",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Shoulder Presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "nj0FUHY7rko",
+                "photo": "images/shoulder-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Lateral raises 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Incline Cable presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "03yTjkLx8Bk",
+                "photo": "images/incline-cable-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one."
+              },
+              {
+                "code": "A2",
+                "name": "Cable fly 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "b964joHYGw0",
+                "photo": "images/cable-fly-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/b964joHYGw0-start.webp",
+                "endPhoto": "images/b964joHYGw0-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Leg extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "VIt03PSoH34",
+                "photo": "images/leg-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/VIt03PSoH34-start.webp",
+                "endPhoto": "images/VIt03PSoH34-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Plie Squat 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squat-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "Plank",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Lat pulldowns 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "HkHOXxm9d4I",
+                "photo": "images/lat-pulldowns-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/HkHOXxm9d4I-start.webp",
+                "endPhoto": "images/HkHOXxm9d4I-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Rope high Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "eWc9NhClP68",
+                "photo": "images/rope-high-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/eWc9NhClP68-start.webp",
+                "endPhoto": "images/eWc9NhClP68-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Supine Stablility Ball Single Leg Hip extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3swvJ_oGOx4",
+                "photo": "images/supine-stablility-ball-single-leg-hip-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3swvJ_oGOx4-start.webp",
+                "endPhoto": "images/3swvJ_oGOx4-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball Leg Curls 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curls-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "The Cat",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Upright Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Front raises 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "D3eIIeP0RcY",
+                "photo": "images/front-raises-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/D3eIIeP0RcY-start.webp",
+                "endPhoto": "images/D3eIIeP0RcY-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Wall pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Stationary Lunges 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "bLZPKMxGQ2o",
+                "photo": "images/stationary-lunges-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+                "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Plie Squat 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squat-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "Plank",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Dumbbell Rear Delt extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "pPCVBdkVQe0",
+                "photo": "images/dumbbell-rear-delt-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/pPCVBdkVQe0-start.webp",
+                "endPhoto": "images/pPCVBdkVQe0-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Supine Stablility Ball Single Leg Hip extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3swvJ_oGOx4",
+                "photo": "images/supine-stablility-ball-single-leg-hip-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3swvJ_oGOx4-start.webp",
+                "endPhoto": "images/3swvJ_oGOx4-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball Leg Curls 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curls-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "The Cat",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Upright Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Front raises 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "D3eIIeP0RcY",
+                "photo": "images/front-raises-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/D3eIIeP0RcY-start.webp",
+                "endPhoto": "images/D3eIIeP0RcY-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Decline Cable Flys 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "uYYaYF420Uk",
+                "photo": "images/decline-cable-flys-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/uYYaYF420Uk-start.webp",
+                "endPhoto": "images/uYYaYF420Uk-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Cable Incline Presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "03yTjkLx8Bk",
+                "photo": "images/cable-incline-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one."
+              },
+              {
+                "code": "A3",
+                "name": "Single leg squats 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "CN4AyMsLts4",
+                "photo": "images/single-leg-squats-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/CN4AyMsLts4-start.webp",
+                "endPhoto": "images/CN4AyMsLts4-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Step Ups 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "mx-hwFO6Nik",
+                "photo": "images/step-ups-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/mx-hwFO6Nik-start.webp",
+                "endPhoto": "images/mx-hwFO6Nik-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "Plank",
+                "reps": "30-45s",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell High Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Straight Arm Pulldowns 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Qjk3y42nTBg",
+                "photo": "images/straight-arm-pulldowns-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball leg curl 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "NRT9m0Ni65o",
+                "photo": "images/stability-ball-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/NRT9m0Ni65o-start.webp",
+                "endPhoto": "images/NRT9m0Ni65o-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "The Cat",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Upright Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Neutral Grip Shoulder Presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "7FcLkHdf4Js",
+                "photo": "images/neutral-grip-shoulder-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/7FcLkHdf4Js-start.webp",
+                "endPhoto": "images/7FcLkHdf4Js-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Wall pushups",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "WQEr9Sf3Mqk",
+                "photo": "images/wall-pushups.webp",
+                "note": "",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Single leg squats 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "CN4AyMsLts4",
+                "photo": "images/single-leg-squats-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/CN4AyMsLts4-start.webp",
+                "endPhoto": "images/CN4AyMsLts4-end.webp"
+              },
+              {
+                "code": "A4",
+                "name": "Step Ups 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "mx-hwFO6Nik",
+                "photo": "images/step-ups-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/mx-hwFO6Nik-start.webp",
+                "endPhoto": "images/mx-hwFO6Nik-end.webp"
+              },
+              {
+                "code": "A5",
+                "name": "Plank",
+                "reps": "30-45s",
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell High Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Dumbbell Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball leg curl 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curl-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Stability Ball extensions 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "NRT9m0Ni65o",
+                "photo": "images/stability-ball-extensions-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/NRT9m0Ni65o-start.webp",
+                "endPhoto": "images/NRT9m0Ni65o-end.webp"
+              },
+              {
+                "code": "B5",
+                "name": "The Cat",
+                "reps": 10,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "96_WMj_P_2M",
+                "photo": "images/the-cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Upright Rows 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Neutral Grip Shoulder Presses 1 1/2",
+                "reps": 15,
+                "sets": 2,
+                "restSeconds": 60,
+                "tempo": "211",
+                "video": "7FcLkHdf4Js",
+                "photo": "images/neutral-grip-shoulder-presses-1-1-2.webp",
+                "note": "1 1/2 reps: a full rep, then a half rep. That counts as one.",
+                "startPhoto": "images/7FcLkHdf4Js-start.webp",
+                "endPhoto": "images/7FcLkHdf4Js-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

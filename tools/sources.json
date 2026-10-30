@@ -1,44 +1,244 @@
 {
   "_folder": "/Videos/PREGNANCY/Pregnancy Exercise Library/Fit Mom To Be Workouts",
-  "_note": "YouTube demo ID -> original video in Dropbox. searchFrom = seconds to skip before looking for the first rep (for files that hold two exercises).",
-  "mx-hwFO6Nik": {"file": "Step Ups.mov", "id": "id:K8eDVsxG9xAAAAAAAAAAAQ"},
-  "Mywk7zS_We4": {"file": "Plie Squats.mov", "id": "id:23qE5W6D62AAAAAAAAAAAQ"},
-  "Q7ZR1xWH-mI": {"file": "Pushups.mov", "id": "id:gY8wEOpPgGAAAAAAAAAAAQ"},
-  "SZjQls3qRBQ": {"file": "Cable Presses.mov", "id": "id:6fLz7xgwAhAAAAAAAAAAAQ"},
-  "q8RHLWKgRqY": {"file": "Deadlifts.mov", "id": "id:GUuyE_k2jrAAAAAAAAAAAQ"},
-  "aah0EyOHpXw": {"file": "Single Leg Curl.mov", "id": "id:mOmQBdRjOUAAAAAAAAAAAQ"},
-  "MRdO7Py--Rk": {"file": "Cable Rows.mov", "id": "id:wvR-1moEOiAAAAAAAAAAAQ"},
-  "eWc9NhClP68": {"file": "Rope High Rows.mov", "id": "id:eXbaAWP3TvAAAAAAAAAAAQ"},
-  "D3eIIeP0RcY": {"file": "Front Raises.mov", "id": "id:IlHGlSesXoAAAAAAAAAAAQ"},
-  "XAsfEvsmSDg": {"file": "Lateral Raises.mov", "id": "id:3j3VF0IJTlAAAAAAAAAAAQ"},
-  "bLZPKMxGQ2o": {"file": "Stationary Lunges.mov", "id": "id:e6L3OhBLE9AAAAAAAAAAAQ"},
-  "XAYfZo9RJPY": {"file": "Stability Ball Leg Curls and Stability Ball Single Leg Curls.mov", "id": "id:Svy9D6lHNSAAAAAAAAAAAQ"},
-  "IIU529JnoZQ": {"file": "Stability Ball Leg Curls and Stability Ball Single Leg Curls.mov", "id": "id:Svy9D6lHNSAAAAAAAAAAAQ", "searchFrom": "half"},
-  "p1XtX2cVNZc": {"file": "Dumbbell Rows.mov", "id": "id:sI5QVY_AmvAAAAAAAAAAAQ"},
-  "b-BYZkIZwPQ": {"file": "Dumbbell High Rows.mov", "id": "id:qJM2ZTzjRlAAAAAAAAAAAQ"},
-  "6JMzQ2D9LDQ": {"file": "Reverse Lunges.mov", "id": "id:zOvfckUBJzAAAAAAAAAAAQ"},
-  "VIt03PSoH34": {"file": "Leg Extensions.mov", "id": "id:baxd1DMTp7AAAAAAAAAAAQ"},
-  "iwwNXr0cSbI": {"file": "Cable Presses.mov", "id": "id:6fLz7xgwAhAAAAAAAAAAAQ"},
-  "b964joHYGw0": {"file": "Cable Flys.mov", "id": "id:_TKw8sVBPPAAAAAAAAAAAQ"},
-  "ZxgZ7J5r8Sw": {"file": "Stability Ball Hip Extensions.mov", "id": "id:W743Xf444UAAAAAAAAAAAQ"},
-  "Qjk3y42nTBg": {"file": "Straight Arm Pulldowns.mov", "id": "id:t4TW49tHlsAAAAAAAAAAAQ"},
-  "3Sc_BEMB14I": {"file": "Upright Rows.mov", "id": "id:XZP9mAr-o9AAAAAAAAAAAQ"},
-  "6CbpPRbbDb8": {"file": "Squats.mov", "id": "id:obzK3s2mXeAAAAAAAAAAAQ"},
-  "WQEr9Sf3Mqk": {"file": "Pushups on Knees.mov", "id": "id:7D8vOpNr87AAAAAAAAAAAQ"},
-  "pPCVBdkVQe0": {"file": "Dumbbell Rear Delt Extensions.mov", "id": "id:Kz3gE9_9Z8AAAAAAAAAAAQ"},
-  "j6PWWcyeUno": {"file": "Lateral Lunges.mov", "id": "id:e3dmtBYtRFAAAAAAAAAAAQ"},
-  "uYYaYF420Uk": {"file": "Cable Decline Flys.mov", "id": "id:jXVnVe4rLBAAAAAAAAAAAQ"},
-  "3swvJ_oGOx4": {"file": "Supine Stability Ball Single Leg Hip Extensions on Toes.mov", "id": "id:vezjSap84pAAAAAAAAAAAQ"},
-  "7FcLkHdf4Js": {"file": "Shoulder Press Neutral Grip.mov", "id": "id:0orDmsYKQTAAAAAAAAAAAQ"},
-  "Vtc9jfIdgMQ": {"file": "Rope Overhead Extensions.mov", "id": "id:pHpdKh0569AAAAAAAAAAAQ"},
-  "MN8TSbqwAOM": {"file": "Rope Pulldowns.mov", "id": "id:GgmphUCGuCAAAAAAAAAAAQ"},
-  "Byr6dH1c0S4": {"file": "Tricep Pulldowns Underhand.mov", "id": "id:Y81Ke3EXZ6AAAAAAAAAAAQ"},
-  "uicoxUY-unM": {"file": "Overhead Tricep Extensions.mov", "id": "id:mGac3_TEuZAAAAAAAAAAAQ"},
-  "RdnPNgzKTSU": {"file": "Dips.mov", "id": "id:46vfw-1z-HAAAAAAAAAAAQ"},
-  "esCBtaMbKg8": {"file": "Tricep Kickbacks neutral - overhand - underhand.mov", "id": "id:bGNKQY-0fxAAAAAAAAAAAQ"},
-  "PL83c9P1TYM": {"file": "Stability Ball Single Leg Hip Extensions.mov", "id": "id:LkHn9ZrXarAAAAAAAAAAAQ"},
-  "HkHOXxm9d4I": {"file": "Lat Pulldowns.mov", "id": "id:_8OVu4tvFMAAAAAAAAAAAQ"},
-  "uNKYHNCl07I": {"file": "Cable Curls.mov", "id": "id:ixYlCaABlZAAAAAAAAAAAQ"},
-  "iJcMgzNCkV0": {"file": "Hammer Curls.mov", "id": "id:7q0A_zAAETAAAAAAAAAAAQ"},
-  "WbuvVZAbhPY": {"file": "Dumbbell Bicep Curls.mov", "id": "id:Pb54dLtUEAAAAAAAAAAAAQ"}
+  "_note": "YouTube demo ID -> original video in Dropbox. searchFrom = seconds to skip before looking for the first rep (for files that hold two exercises). 03yTjkLx8Bk (seated incline cable press machine) has no recording in the folder; its photo stays the Word thumbnail.",
+  "mx-hwFO6Nik": {
+    "file": "Step Ups.mov",
+    "id": "id:K8eDVsxG9xAAAAAAAAAAAQ"
+  },
+  "Mywk7zS_We4": {
+    "file": "Plie Squats.mov",
+    "id": "id:23qE5W6D62AAAAAAAAAAAQ"
+  },
+  "Q7ZR1xWH-mI": {
+    "file": "Pushups.mov",
+    "id": "id:gY8wEOpPgGAAAAAAAAAAAQ"
+  },
+  "SZjQls3qRBQ": {
+    "file": "Cable Presses.mov",
+    "id": "id:6fLz7xgwAhAAAAAAAAAAAQ"
+  },
+  "q8RHLWKgRqY": {
+    "file": "Deadlifts.mov",
+    "id": "id:GUuyE_k2jrAAAAAAAAAAAQ"
+  },
+  "aah0EyOHpXw": {
+    "file": "Single Leg Curl.mov",
+    "id": "id:mOmQBdRjOUAAAAAAAAAAAQ"
+  },
+  "MRdO7Py--Rk": {
+    "file": "Cable Rows.mov",
+    "id": "id:wvR-1moEOiAAAAAAAAAAAQ"
+  },
+  "eWc9NhClP68": {
+    "file": "Rope High Rows.mov",
+    "id": "id:eXbaAWP3TvAAAAAAAAAAAQ"
+  },
+  "D3eIIeP0RcY": {
+    "file": "Front Raises.mov",
+    "id": "id:IlHGlSesXoAAAAAAAAAAAQ"
+  },
+  "XAsfEvsmSDg": {
+    "file": "Lateral Raises.mov",
+    "id": "id:3j3VF0IJTlAAAAAAAAAAAQ"
+  },
+  "bLZPKMxGQ2o": {
+    "file": "Stationary Lunges.mov",
+    "id": "id:e6L3OhBLE9AAAAAAAAAAAQ"
+  },
+  "XAYfZo9RJPY": {
+    "file": "Stability Ball Leg Curls and Stability Ball Single Leg Curls.mov",
+    "id": "id:Svy9D6lHNSAAAAAAAAAAAQ"
+  },
+  "IIU529JnoZQ": {
+    "file": "Stability Ball Leg Curls and Stability Ball Single Leg Curls.mov",
+    "id": "id:Svy9D6lHNSAAAAAAAAAAAQ",
+    "searchFrom": "half"
+  },
+  "p1XtX2cVNZc": {
+    "file": "Dumbbell Rows.mov",
+    "id": "id:sI5QVY_AmvAAAAAAAAAAAQ"
+  },
+  "b-BYZkIZwPQ": {
+    "file": "Dumbbell High Rows.mov",
+    "id": "id:qJM2ZTzjRlAAAAAAAAAAAQ"
+  },
+  "6JMzQ2D9LDQ": {
+    "file": "Reverse Lunges.mov",
+    "id": "id:zOvfckUBJzAAAAAAAAAAAQ"
+  },
+  "VIt03PSoH34": {
+    "file": "Leg Extensions.mov",
+    "id": "id:baxd1DMTp7AAAAAAAAAAAQ"
+  },
+  "iwwNXr0cSbI": {
+    "file": "Cable Presses.mov",
+    "id": "id:6fLz7xgwAhAAAAAAAAAAAQ"
+  },
+  "b964joHYGw0": {
+    "file": "Cable Flys.mov",
+    "id": "id:_TKw8sVBPPAAAAAAAAAAAQ"
+  },
+  "ZxgZ7J5r8Sw": {
+    "file": "Stability Ball Hip Extensions.mov",
+    "id": "id:W743Xf444UAAAAAAAAAAAQ"
+  },
+  "Qjk3y42nTBg": {
+    "file": "Straight Arm Pulldowns.mov",
+    "id": "id:t4TW49tHlsAAAAAAAAAAAQ"
+  },
+  "3Sc_BEMB14I": {
+    "file": "Upright Rows.mov",
+    "id": "id:XZP9mAr-o9AAAAAAAAAAAQ"
+  },
+  "6CbpPRbbDb8": {
+    "file": "Squats.mov",
+    "id": "id:obzK3s2mXeAAAAAAAAAAAQ"
+  },
+  "WQEr9Sf3Mqk": {
+    "file": "Pushups on Knees.mov",
+    "id": "id:7D8vOpNr87AAAAAAAAAAAQ"
+  },
+  "pPCVBdkVQe0": {
+    "file": "Dumbbell Rear Delt Extensions.mov",
+    "id": "id:Kz3gE9_9Z8AAAAAAAAAAAQ"
+  },
+  "j6PWWcyeUno": {
+    "file": "Lateral Lunges.mov",
+    "id": "id:e3dmtBYtRFAAAAAAAAAAAQ"
+  },
+  "uYYaYF420Uk": {
+    "file": "Cable Decline Flys.mov",
+    "id": "id:jXVnVe4rLBAAAAAAAAAAAQ"
+  },
+  "3swvJ_oGOx4": {
+    "file": "Supine Stability Ball Single Leg Hip Extensions on Toes.mov",
+    "id": "id:vezjSap84pAAAAAAAAAAAQ"
+  },
+  "7FcLkHdf4Js": {
+    "file": "Shoulder Press Neutral Grip.mov",
+    "id": "id:0orDmsYKQTAAAAAAAAAAAQ"
+  },
+  "Vtc9jfIdgMQ": {
+    "file": "Rope Overhead Extensions.mov",
+    "id": "id:pHpdKh0569AAAAAAAAAAAQ"
+  },
+  "MN8TSbqwAOM": {
+    "file": "Rope Pulldowns.mov",
+    "id": "id:GgmphUCGuCAAAAAAAAAAAQ"
+  },
+  "Byr6dH1c0S4": {
+    "file": "Tricep Pulldowns Underhand.mov",
+    "id": "id:Y81Ke3EXZ6AAAAAAAAAAAQ"
+  },
+  "uicoxUY-unM": {
+    "file": "Overhead Tricep Extensions.mov",
+    "id": "id:mGac3_TEuZAAAAAAAAAAAQ"
+  },
+  "RdnPNgzKTSU": {
+    "file": "Dips.mov",
+    "id": "id:46vfw-1z-HAAAAAAAAAAAQ"
+  },
+  "esCBtaMbKg8": {
+    "file": "Tricep Kickbacks neutral - overhand - underhand.mov",
+    "id": "id:bGNKQY-0fxAAAAAAAAAAAQ"
+  },
+  "PL83c9P1TYM": {
+    "file": "Stability Ball Single Leg Hip Extensions.mov",
+    "id": "id:LkHn9ZrXarAAAAAAAAAAAQ"
+  },
+  "HkHOXxm9d4I": {
+    "file": "Lat Pulldowns.mov",
+    "id": "id:_8OVu4tvFMAAAAAAAAAAAQ"
+  },
+  "uNKYHNCl07I": {
+    "file": "Cable Curls.mov",
+    "id": "id:ixYlCaABlZAAAAAAAAAAAQ"
+  },
+  "iJcMgzNCkV0": {
+    "file": "Hammer Curls.mov",
+    "id": "id:7q0A_zAAETAAAAAAAAAAAQ"
+  },
+  "WbuvVZAbhPY": {
+    "file": "Dumbbell Bicep Curls.mov",
+    "id": "id:Pb54dLtUEAAAAAAAAAAAAQ"
+  },
+  "rDquo3Hbo3k": {
+    "file": "Cable Decline Presses.mov",
+    "id": "id:x17sRKdzJtAAAAAAAAAAAQ"
+  },
+  "nj0FUHY7rko": {
+    "file": "Shoulder Presses.mov",
+    "id": "id:0vMJaqocA6AAAAAAAAAAAQ"
+  },
+  "CE3Tt5IGOXk": {
+    "file": "Plank on Hands - Plank on Elbows.mov",
+    "id": "id:o-KNeG1sQjAAAAAAAAAAAQ"
+  },
+  "bPhRJDMpCrU": {
+    "file": "Plank on Hands - Plank on Elbows.mov",
+    "id": "id:o-KNeG1sQjAAAAAAAAAAAQ",
+    "searchFrom": 8
+  },
+  "IvXGVym4t_Y": {
+    "file": "Tricep Kickbacks neutral - overhand - underhand.mov",
+    "id": "id:bGNKQY-0fxAAAAAAAAAAAQ",
+    "searchFrom": 42
+  },
+  "0WtcBgPcHYs": {
+    "file": "Tricep Kickbacks neutral - overhand - underhand.mov",
+    "id": "id:bGNKQY-0fxAAAAAAAAAAAQ"
+  },
+  "NRT9m0Ni65o": {
+    "file": "Supine Stability Ball Hip Extensions and Supine Single Leg Hip Extensions.mov",
+    "id": "id:L6JoETAkj6AAAAAAAAAAAQ"
+  },
+  "96_WMj_P_2M": {
+    "file": "The Cat.mov",
+    "id": "id:hOwt7engq4AAAAAAAAAAAQ"
+  },
+  "C-9m7oaYs0M": {
+    "file": "Dumbbell Straight Arm Pulls.m4v",
+    "id": "id:DTcdP2xNe3AAAAAAAAAAAQ"
+  },
+  "CN4AyMsLts4": {
+    "file": "Single Leg Squats.mov",
+    "id": "id:k5q9QjNQXBAAAAAAAAAAAQ"
+  },
+  "p64l50X9lec": {
+    "file": "Bulgarian Split Squats.mov",
+    "id": "id:yjvkOJrwhlAAAAAAAAAAAQ"
+  },
+  "My0l8iRhH_w": {
+    "file": "Supine Stability Ball Single Leg Hip Extensions on Toes.mov",
+    "id": "id:vezjSap84pAAAAAAAAAAAQ"
+  },
+  "Xqo_6MaC0qY": {
+    "file": "Butt Kicks-Bent Knee - Butt Kicks Straight Leg - Butt Kicks In and Out.mov",
+    "id": "id:YVoI_qTweBAAAAAAAAAAAQ",
+    "searchFrom": 33
+  },
+  "57V67yN3nh4": {
+    "file": "Side Kicks.mov",
+    "id": "id:cYHR5YXwZMAAAAAAAAAAAQ"
+  },
+  "l57iQfIG44Y": {
+    "file": "Rope Curls.mov",
+    "id": "id:ObogbrmNb1AAAAAAAAAAAQ"
+  },
+  "BnAjbBXgNIc": {
+    "file": "Arm Raises.mov",
+    "id": "id:qkNKLxvgVvAAAAAAAAAAAQ"
+  },
+  "Iz7ym9Zu6vY": {
+    "file": "Dumbbell Reverse Flys.mov",
+    "id": "id:pEBpgTpUZEAAAAAAAAAAAQ"
+  },
+  "WVfg-Hizz50": {
+    "file": "Single Leg Reaches.mov",
+    "id": "id:vUrZp99tphAAAAAAAAAAAQ"
+  },
+  "hYDdcmwFUY8": {
+    "file": "Bowlers.mov",
+    "id": "id:rE42lBHgycAAAAAAAAAAAQ"
+  }
 }

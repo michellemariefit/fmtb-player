@@ -1,0 +1,734 @@
+{
+  "program": "FMTB",
+  "phase": 3,
+  "name": "Toned Up Prego",
+  "intro": "3 sets. Each lettered group is a circuit: do every exercise in it back to back, then rest.",
+  "instructionVideo": "ehr6YV-cIrA",
+  "days": [
+    {
+      "day": 1,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Seated or Standing Decline Cable Press",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "rDquo3Hbo3k",
+                "photo": "images/seated-or-standing-decline-cable-press.webp",
+                "note": "",
+                "startPhoto": "images/rDquo3Hbo3k-start.webp",
+                "endPhoto": "images/rDquo3Hbo3k-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Seated or Standing Cable flys Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "b964joHYGw0",
+                "photo": "images/seated-or-standing-cable-flys-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/b964joHYGw0-start.webp",
+                "endPhoto": "images/b964joHYGw0-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Seated or Standing Incline Cable Press",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "iwwNXr0cSbI",
+                "photo": "images/seated-or-standing-incline-cable-press.webp",
+                "note": "",
+                "startPhoto": "images/iwwNXr0cSbI-start.webp",
+                "endPhoto": "images/iwwNXr0cSbI-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Upright Rows",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows.webp",
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Lateral raises Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Dumbbell Shoulder Presses",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "nj0FUHY7rko",
+                "photo": "images/dumbbell-shoulder-presses.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Plank",
+                "reps": "30-60s",
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Tricep pulldown Underhand grip",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "Byr6dH1c0S4",
+                "photo": "images/tricep-pulldown-underhand-grip.webp",
+                "note": "",
+                "startPhoto": "images/Byr6dH1c0S4-start.webp",
+                "endPhoto": "images/Byr6dH1c0S4-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Tricep pulldown Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "MN8TSbqwAOM",
+                "photo": "images/tricep-pulldown-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/MN8TSbqwAOM-start.webp",
+                "endPhoto": "images/MN8TSbqwAOM-end.webp"
+              },
+              {
+                "code": "C3",
+                "name": "Dips",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "RdnPNgzKTSU",
+                "photo": "images/dips.webp",
+                "note": "",
+                "startPhoto": "images/RdnPNgzKTSU-start.webp",
+                "endPhoto": "images/RdnPNgzKTSU-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Pushups with hands on Wall, feet on floor",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "Q7ZR1xWH-mI",
+                "photo": "images/pushups-with-hands-on-wall-feet-on-floor.webp",
+                "note": "",
+                "startPhoto": "images/Q7ZR1xWH-mI-start.webp",
+                "endPhoto": "images/Q7ZR1xWH-mI-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Pushups on floor, Pushups low on Wall, Pushups higher on wall",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "Q7ZR1xWH-mI",
+                "photo": "images/pushups-on-floor-pushups-low-on-wall-pushups-higher-on-wall.webp",
+                "note": "",
+                "startPhoto": "images/Q7ZR1xWH-mI-start.webp",
+                "endPhoto": "images/Q7ZR1xWH-mI-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Tubing Flys",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": null,
+                "photo": "images/tubing-flys.webp",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Upright Rows",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "3Sc_BEMB14I",
+                "photo": "images/upright-rows.webp",
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Lateral raises Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAsfEvsmSDg",
+                "photo": "images/lateral-raises-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Dumbbell Shoulder Presses",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "nj0FUHY7rko",
+                "photo": "images/dumbbell-shoulder-presses.webp",
+                "note": "",
+                "startPhoto": "images/nj0FUHY7rko-start.webp",
+                "endPhoto": "images/nj0FUHY7rko-end.webp"
+              },
+              {
+                "code": "B4",
+                "name": "Plank",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Dumbbell Overhead extension",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "uicoxUY-unM",
+                "photo": "images/dumbbell-overhead-extension.webp",
+                "note": "",
+                "startPhoto": "images/uicoxUY-unM-start.webp",
+                "endPhoto": "images/uicoxUY-unM-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Triceps Kickback (underhand grip) Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "IvXGVym4t_Y",
+                "photo": "images/triceps-kickback-underhand-grip-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/IvXGVym4t_Y-start.webp",
+                "endPhoto": "images/IvXGVym4t_Y-end.webp"
+              },
+              {
+                "code": "C3",
+                "name": "Dips",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "uicoxUY-unM",
+                "photo": "images/dips.webp",
+                "note": "",
+                "startPhoto": "images/uicoxUY-unM-start.webp",
+                "endPhoto": "images/uicoxUY-unM-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Reverse lunges with hip flexion",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "6JMzQ2D9LDQ",
+                "photo": "images/reverse-lunges-with-hip-flexion.webp",
+                "note": "",
+                "startPhoto": "images/6JMzQ2D9LDQ-start.webp",
+                "endPhoto": "images/6JMzQ2D9LDQ-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Leg extension",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "VIt03PSoH34",
+                "photo": "images/leg-extension.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/VIt03PSoH34-start.webp",
+                "endPhoto": "images/VIt03PSoH34-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Squats",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "6CbpPRbbDb8",
+                "photo": "images/squats.webp",
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Deadlifts",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "q8RHLWKgRqY",
+                "photo": "images/deadlifts.webp",
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Seated or standing leg curl Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "aah0EyOHpXw",
+                "photo": "images/seated-or-standing-leg-curl-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/aah0EyOHpXw-start.webp",
+                "endPhoto": "images/aah0EyOHpXw-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball Hip extensions",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "ZxgZ7J5r8Sw",
+                "photo": "images/stability-ball-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+                "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Reverse Lunges with Hip flexion",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "6JMzQ2D9LDQ",
+                "photo": "images/reverse-lunges-with-hip-flexion.webp",
+                "note": "",
+                "startPhoto": "images/6JMzQ2D9LDQ-start.webp",
+                "endPhoto": "images/6JMzQ2D9LDQ-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Plie Squat Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "Mywk7zS_We4",
+                "photo": "images/plie-squat-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/Mywk7zS_We4-start.webp",
+                "endPhoto": "images/Mywk7zS_We4-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Dumbbell Squats",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "6CbpPRbbDb8",
+                "photo": "images/dumbbell-squats.webp",
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Deadlifts",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "q8RHLWKgRqY",
+                "photo": "images/deadlifts.webp",
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Stability Ball Leg Curls",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "XAYfZo9RJPY",
+                "photo": "images/stability-ball-leg-curls.webp",
+                "note": "",
+                "startPhoto": "images/XAYfZo9RJPY-start.webp",
+                "endPhoto": "images/XAYfZo9RJPY-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Stability Ball Hip extensions",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "NRT9m0Ni65o",
+                "photo": "images/stability-ball-hip-extensions.webp",
+                "note": "",
+                "startPhoto": "images/NRT9m0Ni65o-start.webp",
+                "endPhoto": "images/NRT9m0Ni65o-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "versions": {
+        "gym": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Lat Pulldown",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "HkHOXxm9d4I",
+                "photo": "images/lat-pulldown.webp",
+                "note": "",
+                "startPhoto": "images/HkHOXxm9d4I-start.webp",
+                "endPhoto": "images/HkHOXxm9d4I-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Standing Cable row Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "MRdO7Py--Rk",
+                "photo": "images/standing-cable-row-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/MRdO7Py--Rk-start.webp",
+                "endPhoto": "images/MRdO7Py--Rk-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Cable High Rows",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "eWc9NhClP68",
+                "photo": "images/cable-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/eWc9NhClP68-start.webp",
+                "endPhoto": "images/eWc9NhClP68-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell Bicep Curl",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "WbuvVZAbhPY",
+                "photo": "images/dumbbell-bicep-curl.webp",
+                "note": "",
+                "startPhoto": "images/WbuvVZAbhPY-start.webp",
+                "endPhoto": "images/WbuvVZAbhPY-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Hammer Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "iJcMgzNCkV0",
+                "photo": "images/hammer-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/iJcMgzNCkV0-start.webp",
+                "endPhoto": "images/iJcMgzNCkV0-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Barbell Curls",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": null,
+                "photo": "images/barbell-curls.webp",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "CAT",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "96_WMj_P_2M",
+                "photo": "images/cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "Plank",
+                "reps": "30-60s",
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "label": "A",
+            "exercises": [
+              {
+                "code": "A1",
+                "name": "Dumbbell Straight Arm Pulldowns",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "C-9m7oaYs0M",
+                "photo": "images/dumbbell-straight-arm-pulldowns.webp",
+                "note": "",
+                "startPhoto": "images/C-9m7oaYs0M-start.webp",
+                "endPhoto": "images/C-9m7oaYs0M-end.webp"
+              },
+              {
+                "code": "A2",
+                "name": "Dumbbell Rows Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "p1XtX2cVNZc",
+                "photo": "images/dumbbell-rows-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
+              },
+              {
+                "code": "A3",
+                "name": "Dumbbell High Rows",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": "b-BYZkIZwPQ",
+                "photo": "images/dumbbell-high-rows.webp",
+                "note": "",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "exercises": [
+              {
+                "code": "B1",
+                "name": "Dumbbell Bicep Curl",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "311",
+                "video": "WbuvVZAbhPY",
+                "photo": "images/dumbbell-bicep-curl.webp",
+                "note": "",
+                "startPhoto": "images/WbuvVZAbhPY-start.webp",
+                "endPhoto": "images/WbuvVZAbhPY-end.webp"
+              },
+              {
+                "code": "B2",
+                "name": "Hammer Drop Set",
+                "reps": "10-10-10",
+                "sets": 3,
+                "restSeconds": 0,
+                "tempo": "211",
+                "video": "iJcMgzNCkV0",
+                "photo": "images/hammer-drop-set.webp",
+                "note": "Drop set: do the first number, lower the weight, do the next, lower again, do the last. No rest between.",
+                "startPhoto": "images/iJcMgzNCkV0-start.webp",
+                "endPhoto": "images/iJcMgzNCkV0-end.webp"
+              },
+              {
+                "code": "B3",
+                "name": "Barbell Curls",
+                "reps": 30,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "111",
+                "video": null,
+                "photo": "images/barbell-curls.webp",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "exercises": [
+              {
+                "code": "C1",
+                "name": "Plank",
+                "reps": 30,
+                "sets": 1,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "CE3Tt5IGOXk",
+                "photo": "images/plank.webp",
+                "note": "",
+                "startPhoto": "images/CE3Tt5IGOXk-start.webp",
+                "endPhoto": "images/CE3Tt5IGOXk-end.webp"
+              },
+              {
+                "code": "C2",
+                "name": "CAT",
+                "reps": 10,
+                "sets": 3,
+                "restSeconds": 60,
+                "tempo": "311",
+                "video": "96_WMj_P_2M",
+                "photo": "images/cat.webp",
+                "note": "",
+                "startPhoto": "images/96_WMj_P_2M-start.webp",
+                "endPhoto": "images/96_WMj_P_2M-end.webp"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
