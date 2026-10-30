@@ -21,7 +21,9 @@
                 "tempo": "311",
                 "video": "iwwNXr0cSbI",
                 "photo": "images/cable-incline-presses.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/iwwNXr0cSbI-start.webp",
+                "endPhoto": "images/iwwNXr0cSbI-end.webp"
               },
               {
                 "code": "A2",
@@ -32,7 +34,9 @@
                 "tempo": "311",
                 "video": "b964joHYGw0",
                 "photo": "images/cable-fly-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/b964joHYGw0-start.webp",
+                "endPhoto": "images/b964joHYGw0-end.webp"
               },
               {
                 "code": "A3",
@@ -43,7 +47,9 @@
                 "tempo": "311",
                 "video": "Q7ZR1xWH-mI",
                 "photo": "images/push-ups-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/Q7ZR1xWH-mI-start.webp",
+                "endPhoto": "images/Q7ZR1xWH-mI-end.webp"
               }
             ]
           },
@@ -59,7 +65,9 @@
                 "tempo": "311",
                 "video": "7FcLkHdf4Js",
                 "photo": "images/db-shoulder-press-neutral-grip.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/7FcLkHdf4Js-start.webp",
+                "endPhoto": "images/7FcLkHdf4Js-end.webp"
               },
               {
                 "code": "B2",
@@ -70,7 +78,9 @@
                 "tempo": "311",
                 "video": "3Sc_BEMB14I",
                 "photo": "images/upright-rows-3.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
               },
               {
                 "code": "B3",
@@ -81,7 +91,9 @@
                 "tempo": "311",
                 "video": "XAsfEvsmSDg",
                 "photo": "images/lateral-raises-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
               }
             ]
           },
@@ -97,7 +109,9 @@
                 "tempo": "311",
                 "video": "Vtc9jfIdgMQ",
                 "photo": "images/rope-overhead-extension.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/Vtc9jfIdgMQ-start.webp",
+                "endPhoto": "images/Vtc9jfIdgMQ-end.webp"
               },
               {
                 "code": "C2",
@@ -108,7 +122,9 @@
                 "tempo": "311",
                 "video": "MN8TSbqwAOM",
                 "photo": "images/rope-pulldown.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/MN8TSbqwAOM-start.webp",
+                "endPhoto": "images/MN8TSbqwAOM-end.webp"
               },
               {
                 "code": "C3",
@@ -119,7 +135,9 @@
                 "tempo": "311",
                 "video": "Byr6dH1c0S4",
                 "photo": "images/tricep-pulldown-underhand-grip.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/Byr6dH1c0S4-start.webp",
+                "endPhoto": "images/Byr6dH1c0S4-end.webp"
               }
             ]
           }
@@ -137,7 +155,9 @@
                 "tempo": "101",
                 "video": "WQEr9Sf3Mqk",
                 "photo": "images/pushups.webp",
-                "note": "Hands on the wall, feet on the floor."
+                "note": "Hands on the wall, feet on the floor.",
+                "startPhoto": "images/WQEr9Sf3Mqk-start.webp",
+                "endPhoto": "images/WQEr9Sf3Mqk-end.webp"
               },
               {
                 "code": "A2",
@@ -148,7 +168,9 @@
                 "tempo": "101",
                 "video": "Q7ZR1xWH-mI",
                 "photo": "images/pushups.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/Q7ZR1xWH-mI-start.webp",
+                "endPhoto": "images/Q7ZR1xWH-mI-end.webp"
               }
             ]
           },
@@ -164,7 +186,9 @@
                 "tempo": "311",
                 "video": "7FcLkHdf4Js",
                 "photo": "images/dumbbell-shoulder-press-neutral-grip.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/7FcLkHdf4Js-start.webp",
+                "endPhoto": "images/7FcLkHdf4Js-end.webp"
               },
               {
                 "code": "B2",
@@ -175,7 +199,9 @@
                 "tempo": "311",
                 "video": "3Sc_BEMB14I",
                 "photo": "images/upright-rows-4.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/3Sc_BEMB14I-start.webp",
+                "endPhoto": "images/3Sc_BEMB14I-end.webp"
               },
               {
                 "code": "B3",
@@ -186,7 +212,9 @@
                 "tempo": "311",
                 "video": "XAsfEvsmSDg",
                 "photo": "images/lateral-raises-3.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/XAsfEvsmSDg-start.webp",
+                "endPhoto": "images/XAsfEvsmSDg-end.webp"
               }
             ]
           },
@@ -202,7 +230,9 @@
                 "tempo": "311",
                 "video": "uicoxUY-unM",
                 "photo": "images/seated-overhead-dumbell-triceps-extension.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/uicoxUY-unM-start.webp",
+                "endPhoto": "images/uicoxUY-unM-end.webp"
               },
               {
                 "code": "C2",
@@ -213,7 +243,9 @@
                 "tempo": "111",
                 "video": "RdnPNgzKTSU",
                 "photo": "images/dips.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/RdnPNgzKTSU-start.webp",
+                "endPhoto": "images/RdnPNgzKTSU-end.webp"
               },
               {
                 "code": "C3",
@@ -224,7 +256,9 @@
                 "tempo": "311",
                 "video": "esCBtaMbKg8",
                 "photo": "images/dumbbell-tricep-kickbacks.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/esCBtaMbKg8-start.webp",
+                "endPhoto": "images/esCBtaMbKg8-end.webp"
               }
             ]
           }
@@ -247,7 +281,9 @@
                 "tempo": "311",
                 "video": "6JMzQ2D9LDQ",
                 "photo": "images/reverse-lunges-with-hip-flexion-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/6JMzQ2D9LDQ-start.webp",
+                "endPhoto": "images/6JMzQ2D9LDQ-end.webp"
               },
               {
                 "code": "A2",
@@ -258,7 +294,9 @@
                 "tempo": "311",
                 "video": "j6PWWcyeUno",
                 "photo": "images/lateral-lunges-with-hip-flexion-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/j6PWWcyeUno-start.webp",
+                "endPhoto": "images/j6PWWcyeUno-end.webp"
               },
               {
                 "code": "A3",
@@ -269,7 +307,9 @@
                 "tempo": "311",
                 "video": "6CbpPRbbDb8",
                 "photo": "images/dumbbell-squat-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
               }
             ]
           },
@@ -285,7 +325,9 @@
                 "tempo": "311",
                 "video": "q8RHLWKgRqY",
                 "photo": "images/deadlift-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
               },
               {
                 "code": "B2",
@@ -296,7 +338,9 @@
                 "tempo": "311",
                 "video": "PL83c9P1TYM",
                 "photo": "images/stability-ball-single-leg-hip-extension.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/PL83c9P1TYM-start.webp",
+                "endPhoto": "images/PL83c9P1TYM-end.webp"
               },
               {
                 "code": "B3",
@@ -307,7 +351,9 @@
                 "tempo": "311",
                 "video": "IIU529JnoZQ",
                 "photo": "images/stability-ball-single-leg-curl.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/IIU529JnoZQ-start.webp",
+                "endPhoto": "images/IIU529JnoZQ-end.webp"
               }
             ]
           }
@@ -325,7 +371,9 @@
                 "tempo": "311",
                 "video": "6JMzQ2D9LDQ",
                 "photo": "images/reverse-lunges-with-hip-flexion-3.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/6JMzQ2D9LDQ-start.webp",
+                "endPhoto": "images/6JMzQ2D9LDQ-end.webp"
               },
               {
                 "code": "A2",
@@ -336,7 +384,9 @@
                 "tempo": "311",
                 "video": "j6PWWcyeUno",
                 "photo": "images/lateral-lunges-with-hip-flexion-3.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/j6PWWcyeUno-start.webp",
+                "endPhoto": "images/j6PWWcyeUno-end.webp"
               },
               {
                 "code": "A3",
@@ -347,7 +397,9 @@
                 "tempo": "311",
                 "video": "6CbpPRbbDb8",
                 "photo": "images/dumbbell-squat-3.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/6CbpPRbbDb8-start.webp",
+                "endPhoto": "images/6CbpPRbbDb8-end.webp"
               }
             ]
           },
@@ -363,7 +415,9 @@
                 "tempo": "311",
                 "video": "q8RHLWKgRqY",
                 "photo": "images/deadlifts-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/q8RHLWKgRqY-start.webp",
+                "endPhoto": "images/q8RHLWKgRqY-end.webp"
               },
               {
                 "code": "B2",
@@ -374,7 +428,9 @@
                 "tempo": "311",
                 "video": "PL83c9P1TYM",
                 "photo": "images/stability-ball-single-leg-hip-extension.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/PL83c9P1TYM-start.webp",
+                "endPhoto": "images/PL83c9P1TYM-end.webp"
               },
               {
                 "code": "B3",
@@ -385,7 +441,9 @@
                 "tempo": "111",
                 "video": "IIU529JnoZQ",
                 "photo": "images/stability-ball-single-leg-curl.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/IIU529JnoZQ-start.webp",
+                "endPhoto": "images/IIU529JnoZQ-end.webp"
               }
             ]
           }
@@ -408,7 +466,9 @@
                 "tempo": "311",
                 "video": "HkHOXxm9d4I",
                 "photo": "images/lat-pulldowns.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/HkHOXxm9d4I-start.webp",
+                "endPhoto": "images/HkHOXxm9d4I-end.webp"
               },
               {
                 "code": "A2",
@@ -419,7 +479,9 @@
                 "tempo": "311",
                 "video": "Qjk3y42nTBg",
                 "photo": "images/straight-arm-pulldown-2.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/Qjk3y42nTBg-start.webp",
+                "endPhoto": "images/Qjk3y42nTBg-end.webp"
               },
               {
                 "code": "A3",
@@ -430,7 +492,9 @@
                 "tempo": "311",
                 "video": "MRdO7Py--Rk",
                 "photo": "images/standing-cable-row.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/MRdO7Py--Rk-start.webp",
+                "endPhoto": "images/MRdO7Py--Rk-end.webp"
               }
             ]
           },
@@ -446,7 +510,9 @@
                 "tempo": "311",
                 "video": "uNKYHNCl07I",
                 "photo": "images/cable-bicep-curl.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/uNKYHNCl07I-start.webp",
+                "endPhoto": "images/uNKYHNCl07I-end.webp"
               },
               {
                 "code": "B2",
@@ -457,7 +523,9 @@
                 "tempo": "311",
                 "video": "iJcMgzNCkV0",
                 "photo": "images/dumbbell-hammer-curl.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/iJcMgzNCkV0-start.webp",
+                "endPhoto": "images/iJcMgzNCkV0-end.webp"
               },
               {
                 "code": "B3",
@@ -486,7 +554,9 @@
                 "tempo": "311",
                 "video": "b-BYZkIZwPQ",
                 "photo": "images/bent-over-dumbbell-high-rows.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+                "endPhoto": "images/b-BYZkIZwPQ-end.webp"
               },
               {
                 "code": "A2",
@@ -497,7 +567,9 @@
                 "tempo": "311",
                 "video": "p1XtX2cVNZc",
                 "photo": "images/bent-over-dumbbell-rows.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/p1XtX2cVNZc-start.webp",
+                "endPhoto": "images/p1XtX2cVNZc-end.webp"
               },
               {
                 "code": "A3",
@@ -508,7 +580,9 @@
                 "tempo": "311",
                 "video": "pPCVBdkVQe0",
                 "photo": "images/dumbbell-rear-delt-extensions.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/pPCVBdkVQe0-start.webp",
+                "endPhoto": "images/pPCVBdkVQe0-end.webp"
               }
             ]
           },
@@ -524,7 +598,9 @@
                 "tempo": "311",
                 "video": "WbuvVZAbhPY",
                 "photo": "images/dumbbell-bicep-curls.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/WbuvVZAbhPY-start.webp",
+                "endPhoto": "images/WbuvVZAbhPY-end.webp"
               },
               {
                 "code": "B2",
@@ -535,7 +611,9 @@
                 "tempo": "311",
                 "video": "iJcMgzNCkV0",
                 "photo": "images/dumbbell-hammer-curls.webp",
-                "note": ""
+                "note": "",
+                "startPhoto": "images/iJcMgzNCkV0-start.webp",
+                "endPhoto": "images/iJcMgzNCkV0-end.webp"
               },
               {
                 "code": "B3",
