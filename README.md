@@ -39,6 +39,8 @@ The photos from the Word files are small thumbnails. `tools/grab_frames.py` pull
 - Copy those recordings into `tools/cache/` (ignored by git), then run `python tools/grab_frames.py`. Anything not in `sources.json` is downloaded from YouTube with yt-dlp instead.
 - It picks the frame just before the first rep starts as the start, and the most different frame within that rep as the end.
 - Check every pair in `tools/review.html`. Any it gets wrong (for example, you talking to camera), fix by adding the exact seconds to `tools/overrides.json` and running it again.
+- Photos that already exist in `images/` are kept, so a new phase only needs the recordings for exercises that are new. Add those to `sources.json`, put just those files in `tools/cache/`, and run the script. To redo a pair on purpose: `python tools/grab_frames.py --force <video id>`.
+- `tools/frames.json` remembers the seconds used for every pair so the review page stays complete.
 - The player shows the two photos side by side with Start and End labels as soon as they exist.
 
 ## Phase instruction videos

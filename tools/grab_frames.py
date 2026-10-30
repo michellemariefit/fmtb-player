@@ -24,6 +24,12 @@ What it does, for every exercise video in data/*.json:
 If a pair is wrong (for example it caught you talking to camera), add the exact
 seconds to tools/overrides.json and run the script again:
     { "mx-hwFO6Nik": { "start": 12.5, "end": 14.0 } }
+
+Videos whose two photos already exist in images/ are kept as they are, so a new
+phase only needs the recordings for exercises that are new. To redo a pair on
+purpose, pass its video ID (or --force alone to redo everything):
+    python tools/grab_frames.py --force mx-hwFO6Nik
+The seconds used for each pair are remembered in tools/frames.json.
 """
 import glob, json, os, subprocess, sys
 
@@ -35,6 +41,7 @@ CACHE = os.path.join(ROOT, "tools", "cache")
 IMAGES = os.path.join(ROOT, "images")
 OVERRIDES = os.path.join(ROOT, "tools", "overrides.json")
 SOURCES = os.path.join(ROOT, "tools", "sources.json")
+FRAMES = os.path.join(ROOT, "tools", "frames.json")   # seconds used for each pair, for review.html
 SAMPLE_FPS = 6          # frames per second to analyse
 SKIP_SECONDS = 2.0      # skip the very start of each video
 MAX_SECONDS = 60        # only look at the first minute
@@ -142,11 +149,29 @@ def save(frame, name):
     return "images/" + name
 
 
+def existing(vid):
+    """Photo paths for a video whose pair was already made, or None."""
+    names = [f"{vid}-start.webp", f"{vid}-end.webp"]
+    if all(os.path.exists(os.path.join(IMAGES, n)) for n in names):
+        return ["images/" + n for n in names]
+    return None
+
+
 def main():
+    args = sys.argv[1:]
+    force_all = args == ["--force"]
+    force = set(args[1:]) if args[:1] == ["--force"] else set()
     ids = video_ids()
+    remembered = json.load(open(FRAMES)) if os.path.exists(FRAMES) else {}
     results = {}
     for n, (vid, name) in enumerate(ids.items(), 1):
         print(f"[{n}/{len(ids)}] {name} ({vid})")
+        kept = existing(vid)
+        if kept and not force_all and vid not in force:
+            results[vid] = {"name": name, "start": kept[0], "end": kept[1],
+                            "t": remembered.get(vid, {}).get("t", ["kept", "kept"])}
+            print("   kept existing photos")
+            continue
         try:
             path = download(vid)
             if vid in overrides:
@@ -163,6 +188,13 @@ def main():
                             "end": save(fe, f"{vid}-end.webp"), "t": [round(s, 1), round(e, 1)]}
         except Exception as err:  # keep going if one video fails
             print("   failed:", err)
+            if kept:  # fall back to the photos that were already there
+                results[vid] = {"name": name, "start": kept[0], "end": kept[1],
+                                "t": remembered.get(vid, {}).get("t", ["kept", "kept"])}
+                print("   kept existing photos instead")
+
+    json.dump({vid: {"name": r["name"], "t": r["t"]} for vid, r in results.items()},
+              open(FRAMES, "w"), indent=2)
 
     for path in glob.glob(os.path.join(ROOT, "data", "*.json")):
         data = json.load(open(path))
