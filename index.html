@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Fit Mom To Be Workouts</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,7 +74,7 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 .note{font-size:13px;color:var(--muted);margin:0}
 .row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
 .sets{display:flex;gap:8px}
-.sets button{width:40px;height:40px;border-radius:12px;border:2px solid var(--line);background:var(--bg);font:500 14px/1 var(--mono)}
+.sets button{min-width:40px;height:40px;padding:0 12px;border-radius:12px;border:2px solid var(--line);background:var(--bg);font:500 14px/1 var(--mono);white-space:nowrap}
 .sets button[aria-pressed="true"]{background:var(--done);border-color:var(--done);color:var(--card)}
 .demo{font-weight:700;font-size:14px;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;
   border:0;background:none;padding:6px 0}
@@ -94,15 +95,20 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
 .pair figcaption{position:absolute;left:8px;bottom:8px;font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;
   background:var(--card);color:var(--ink);padding:5px 7px;border-radius:6px}
 
-.timer{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--brand);color:var(--card);
-  padding-block:14px calc(14px + env(safe-area-inset-bottom,0px));
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.timer .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:14px}
-.timer .t{font:600 40px/1 var(--mono);font-variant-numeric:tabular-nums;min-width:3.2ch}
-.timer .lbl{flex:1;min-width:0;font-size:14px}
-.timer .lbl small{display:block;opacity:.7}
-.timer button{border:1px solid currentColor;background:transparent;border-radius:12px;padding:10px 14px;font-weight:700}
+.rest{position:relative;overflow:hidden;margin-top:4px;background:var(--brand);color:var(--card);border-radius:14px;
+  padding:14px 14px 12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.rest .t{font:600 40px/1 var(--mono);font-variant-numeric:tabular-nums;min-width:2.4ch}
+.rest .lbl{flex:1;min-width:120px;font-size:14px;font-weight:700}
+.rest .lbl small{display:block;opacity:.75;font-weight:400}
+.rest .btns{display:flex;gap:8px;flex:none}
+.rest button{border:1px solid currentColor;background:transparent;color:inherit;border-radius:12px;padding:10px 14px;font-weight:700;white-space:nowrap}
 .bar{position:absolute;left:0;top:0;height:4px;background:var(--gold);transition:width 1s linear}
+.howto{background:var(--accent-soft);border-radius:20px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.howto h2{margin:0;font:400 22px/1.15 var(--display);color:var(--brand)}
+.howto ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.howto ol b{font-family:var(--mono);font-weight:600;letter-spacing:.04em}
+.howto .got{align-self:flex-start;border:0;background:var(--brand);color:var(--card);border-radius:12px;padding:10px 16px;font-weight:700;margin-top:4px}
+.howto-link{align-self:flex-start;border:0;background:none;color:var(--accent);font-weight:700;padding:0;text-decoration:underline}
 .err{background:var(--accent-soft);border-radius:14px;padding:14px}
 @media (prefers-reduced-motion:reduce){.bar{transition:none}}
 </style>
@@ -120,20 +126,11 @@ h1{font:400 clamp(30px,8.5vw,42px)/1.1 var(--display);margin:0;text-wrap:balance
     </div>
   </header>
 
+  <section id="howto"></section>
   <section class="intro" id="intro"></section>
   <nav class="days" id="days" aria-label="Workout day"></nav>
   <main id="workout" class="wrap" style="gap:14px"></main>
   <p class="week" id="week"></p>
-</div>
-
-<div class="timer" id="timer" hidden>
-  <div class="bar" id="bar"></div>
-  <div class="in">
-    <div class="t" id="tLeft">60</div>
-    <div class="lbl"><span id="tTitle">Rest</span><small id="tNext"></small></div>
-    <button id="tPlus">+15s</button>
-    <button id="tSkip">Skip</button>
-  </div>
 </div>
 
 <script>
@@ -156,7 +153,22 @@ async function load(n){
   if(!r.ok) throw new Error('Phase '+n+' did not load');
   return state.data[n]=await r.json();
 }
-function restLabel(s){return s?`Rest ${s}s`:'No rest'}
+function restLabel(s,next){return s?`Rest ${s}s`:(next?`Straight into ${next}`:'No rest')}
+function howtoHTML(){
+  if(store.get('fmtb:howto',false)) return `<button class="howto-link" data-howto="show">How this works</button>`;
+  return `<div class="howto"><h2>How this works</h2><ol>
+    <li>Work down each pair: <b>A1</b>, then <b>A2</b>, back to back.</li>
+    <li>After the last exercise in the pair, tap the set you just finished. Your rest timer starts right there.</li>
+    <li><b>+15s</b> gives you more rest. <b>Skip rest</b> ends it early. Then back to <b>A1</b> for the next set.</li>
+    <li>Tap a set again to untick it. When every set is ticked, press Finish workout.</li>
+  </ol><button class="got" data-howto="hide">Got it</button></div>`;
+}
+function restHTML(){
+  if(!rest) return '';
+  return `<div class="rest" id="rest" role="timer" aria-live="off"><div class="bar" id="bar" style="width:${rest.total?100*(rest.total-rest.left)/rest.total:0}%"></div>
+    <div class="t" id="tLeft">${Math.max(rest.left,0)}</div><div class="lbl">Rest<small>${esc(rest.label)}</small></div>
+    <div class="btns"><button data-rest="plus">+15s</button><button data-rest="skip">Skip rest</button></div></div>`;
+}
 
 async function render(){
   let p;
@@ -179,6 +191,7 @@ async function render(){
       ?`<div id="ex-intro${i}" style="display:flex;flex-direction:column;gap:8px"><button class="video-link" style="text-align:left;width:100%" data-embed="${esc(x.video)}" data-code="intro${i}" data-label="${esc(x.title)}"><span class="play">${x.icon}</span><span><b>${esc(x.title)}</b><small>${x.sub}</small></span></button></div>`
       :`<a class="video-link" href="https://www.youtube.com/watch?v=${esc(x.video)}" target="_blank" rel="noopener"><span class="play">${x.icon}</span><span><b>${esc(x.title)}</b><small>${x.sub}</small></span></a>`).join('');
 
+  $('#howto').innerHTML=howtoHTML();
   $('#days').innerHTML=p.days.map(d=>{
     const done=store.get(`fmtb:p${state.phase}:${state.version}:d${d.day}`,{}).finished;
     return `<button aria-pressed="${d.day===state.day}" data-day="${d.day}" class="${done?'is-done':''}"><b>Day ${d.day}</b><span>${done?'Done':d.versions[state.version].reduce((a,s)=>a+s.exercises.length,0)+' exercises'}</span></button>`}).join('');
@@ -193,9 +206,10 @@ async function render(){
     const complete=s.exercises.every(e=>(saved.ticks[e.code]||[]).filter(Boolean).length>=(+e.sets||0));
     if(!complete) allDone=false;
     return `<section class="ss ${complete?'complete':''}"><div class="ss-head"><h2>${s.label} · ${kind}</h2><span>${complete?'Done':`${sets} rounds, back to back`}</span></div>`+
-    s.exercises.map(e=>{
+    s.exercises.map((e,ei)=>{
       const t=saved.ticks[e.code]||[];
-      const btns=Array.from({length:+e.sets||0},(_,i)=>`<button aria-pressed="${!!t[i]}" aria-label="Set ${i+1} of ${e.name}" data-tick="${e.code}" data-i="${i}">${i+1}</button>`).join('');
+      const next=s.exercises[ei+1]?.code;
+      const btns=Array.from({length:+e.sets||0},(_,i)=>`<button aria-pressed="${!!t[i]}" aria-label="Set ${i+1} of ${e.name}" data-tick="${e.code}" data-i="${i}">Set ${i+1}</button>`).join('');
       const demo=e.video?(EMBED_OK
         ?`<button class="demo" data-embed="${esc(e.video)}" data-code="${e.code}">▶ Watch demo</button>`
         :`<a class="demo" href="https://www.youtube.com/watch?v=${esc(e.video)}" target="_blank" rel="noopener">▶ Watch demo</a>`)
@@ -207,9 +221,10 @@ async function render(){
       return `<div class="ex${pair?' has-pair':''}" id="ex-${e.code}">
         ${pic}
         <div class="info"><h3><span class="code">${e.code}</span>${esc(e.name)}</h3>
-          <div class="meta"><span class="chip">${e.reps} reps</span><span class="chip">${e.sets} sets</span><span class="chip">Tempo ${esc(e.tempo)}</span><span class="chip">${restLabel(e.restSeconds)}</span></div>
+          <div class="meta"><span class="chip">${e.reps} reps</span><span class="chip">${e.sets} sets</span><span class="chip">Tempo ${esc(e.tempo)}</span><span class="chip">${restLabel(e.restSeconds,next)}</span></div>
           ${e.note?`<p class="note">${esc(e.note)}</p>`:''}
           <div class="row"><div class="sets">${btns}</div>${demo}</div>
+          ${rest&&rest.code===e.code?restHTML():''}
         </div></div>`}).join('')+`</section>`}).join('');
 
   if(saved.finished){
@@ -222,15 +237,16 @@ async function render(){
   $('#week').innerHTML=`<b>${w}</b> workout${w===1?'':'s'} done this week`;
 }
 
-let timer=null,left=0,total=0;
-function startRest(sec,label){
-  clearInterval(timer);left=total=sec;$('#tTitle').textContent='Rest';$('#tNext').textContent=label;
-  $('#timer').hidden=false;tick();timer=setInterval(()=>{left--;tick();if(left<=0)stopRest()},1000);
+let timer=null,rest=null;   // rest = {code, left, total, label} while a rest timer is running
+function startRest(code,sec,label){
+  clearInterval(timer);rest={code,left:sec,total:sec,label};
+  timer=setInterval(()=>{rest.left--;tick();if(rest.left<=0)stopRest(true)},1000);
 }
-function tick(){$('#tLeft').textContent=Math.max(left,0);$('#bar').style.width=(total?100*(total-left)/total:0)+'%'}
-function stopRest(){clearInterval(timer);$('#timer').hidden=true}
-$('#tSkip').onclick=stopRest;
-$('#tPlus').onclick=()=>{left+=15;total+=15;tick()};
+function tick(){
+  const t=$('#tLeft'),b=$('#bar');if(!t||!rest)return;
+  t.textContent=Math.max(rest.left,0);b.style.width=(rest.total?100*(rest.total-rest.left)/rest.total:0)+'%';
+}
+function stopRest(rerender){clearInterval(timer);timer=null;rest=null;if(rerender)render()}
 
 document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
@@ -244,11 +260,19 @@ document.addEventListener('click',e=>{
       const grp=day.versions[state.version].find(g=>g.exercises.some(x=>x.code===b.dataset.tick));
       const ex=grp.exercises.find(x=>x.code===b.dataset.tick);
       const last=grp.exercises[grp.exercises.length-1].code===ex.code;
-      const rest=last?ex.restSeconds:0;
-      if(rest>0) startRest(rest,`Round ${i+1} of ${grp.label} done`);
+      const secs=last?+ex.restSeconds||0:0;
+      if(secs>0){
+        const more=i+1<(+ex.sets||0);
+        startRest(ex.code,secs,more?`Set ${i+1} of ${grp.label} done · then back to ${grp.exercises[0].code} for set ${i+2}`:`Set ${i+1} of ${grp.label} done · that was the last one`);
+      }
     }
     render();return;
   }
+  if(b.dataset.rest){
+    if(b.dataset.rest==='skip'){stopRest(true);return}
+    if(rest){rest.left+=15;rest.total+=15;tick()}return;
+  }
+  if(b.dataset.howto){store.set('fmtb:howto',b.dataset.howto==='hide');render();return}
   if(b.dataset.embed){
     const host=document.getElementById('ex-'+b.dataset.code);
     const open=host.querySelector('.embed');
